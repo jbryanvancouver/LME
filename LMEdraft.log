@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 SEP 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 OCT 2017 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -147,13 +147,10 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (./LMEdraft.aux
 
-LaTeX Warning: Label `fig:cone' multiply defined.
+LaTeX Warning: Label `defDelta' multiply defined.
 
 
 LaTeX Warning: Label `Fib' multiply defined.
-
-
-LaTeX Warning: Label `Sregion' multiply defined.
 
 )
 \openout1 = `LMEdraft.aux'.
@@ -231,83 +228,60 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+(./LMEdraft.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 70.
-
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write3
+\openout3 = `LMEdraft.toc'.
+
+ [2] [1]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 122.
+(amsmath)                 on input line 120.
 
-[1] [2]
+[1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 194.
 
-LaTeX Warning: Citation `Kly02' on page 3 undefined on input line 187.
-
-
-LaTeX Warning: Citation `Kly07' on page 3 undefined on input line 187.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 187.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 187.
-
-
-LaTeX Warning: Citation `wallach' on page 3 undefined on input line 187.
-
-
-LaTeX Warning: Citation `Walter' on page 3 undefined on input line 187.
-
-[3] [4]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
+ [2]
 Package epstopdf Info: Source file: <cone.eps>
-(epstopdf)                    date: 2017-09-30 14:39:07
+(epstopdf)                    date: 2017-10-31 15:12:03
 (epstopdf)                    size: 40402 bytes
 (epstopdf)             Output file: <cone-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-09-30 14:39:07
-(epstopdf)                    size: 17973 bytes
+(epstopdf)                    date: 2017-10-31 15:13:44
+(epstopdf)                    size: 17958 bytes
 (epstopdf)             Command: <repstopdf --outfile=cone-eps-converted-to.pdf 
 cone.eps>
-(epstopdf)             \includegraphics on input line 223.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
- <cone-eps-converted-to.pdf, id=33, 1084.05pt x 882.29625pt>
+
+<cone-eps-converted-to.pdf, id=35, 1084.05pt x 882.29625pt>
 File: cone-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cone-eps-converted-to.pdf>
-Package pdftex.def Info: cone-eps-converted-to.pdf used on input line 223.
+Package pdftex.def Info: cone-eps-converted-to.pdf used on input line 199.
 (pdftex.def)             Requested size: 375.80542pt x 305.85997pt.
 
+Overfull \hbox (8.98897pt too wide) in paragraph at lines 231--241
+\OT1/cmr/m/n/12 By a re-mark-able du-al-ity known as the Kempf-Ness the-o-rem, 
+the sym-plec-tic ge-om-e-try $\OML/cmm/m/it/12 ^^V[]\OT1/cmr/m/n/12 (0)\OML/cmm
+/m/it/12 =K$
+ []
 
-LaTeX Warning: Citation `mathpaper' on page 5 undefined on input line 246.
-
-
-LaTeX Warning: Citation `mathpaper' on page 5 undefined on input line 246.
-
-[5] [6 <./cone-eps-converted-to.pdf>]
-
-LaTeX Warning: Citation `mathpaper' on page 7 undefined on input line 253.
-
-
-LaTeX Warning: Citation `mathpaper' on page 7 undefined on input line 262.
-
-[7]
-
-LaTeX Warning: Citation `mathpaper' on page 8 undefined on input line 272.
-
-[8]
-
-LaTeX Warning: Reference `fig:23BC' on page 9 undefined on input line 333.
-
+[3] [4 <./cone-eps-converted-to.pdf>] [5]
 Package epstopdf Info: Source file: <23BC.eps>
 (epstopdf)                    date: 2017-09-30 14:39:07
 (epstopdf)                    size: 7537162 bytes
@@ -316,56 +290,33 @@ Package epstopdf Info: Source file: <23BC.eps>
 (epstopdf)                    size: 217771 bytes
 (epstopdf)             Command: <repstopdf --outfile=23BC-eps-converted-to.pdf 
 23BC.eps>
-(epstopdf)             \includegraphics on input line 337.
+(epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
-<23BC-eps-converted-to.pdf, id=67, 1040.88875pt x 1306.8825pt>
+
+<23BC-eps-converted-to.pdf, id=66, 1040.88875pt x 1306.8825pt>
 File: 23BC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use 23BC-eps-converted-to.pdf>
-Package pdftex.def Info: 23BC-eps-converted-to.pdf used on input line 337.
+Package pdftex.def Info: 23BC-eps-converted-to.pdf used on input line 330.
 (pdftex.def)             Requested size: 328.82706pt x 412.84671pt.
- [9] [10 <./23BC-eps-converted-to.pdf>] [11]
-[12]
-
-LaTeX Warning: Citation `mathpaper' on page 13 undefined on input line 410.
-
-[13]
-Overfull \hbox (58.24104pt too wide) detected at line 422
-\OMS/cmsy/m/n/14.4 j\OT1/cmr/m/n/14.4 	[]\OMS/cmsy/m/n/14.4 i \OT1/cmr/m/n/14.4
- = [] [] []  \OML/cmm/m/it/14.4 :
+ [6] [7 <./23BC-eps-converted-to.pdf>] [8]
+[9] [10] [11] [12] [13]
+Overfull \hbox (24.92273pt too wide) in paragraph at lines 601--603
+\OT1/cmr/m/n/12 As an ex-am-ple, we can con-sider the group $\OML/cmm/m/it/12 S
+U\OT1/cmr/m/n/12 (2) \OMS/cmsy/m/n/12 ^^B \OML/cmm/m/it/12 SU\OT1/cmr/m/n/12 (2
+)$, and rep-re-sen-ta-tions $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (2\OML/cmm/m/it/
+12 ; \OT1/cmr/m/n/12 1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N; 
+K\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N \OT1/c
+mr/m/n/12 +
  []
 
+[14]
 
-Overfull \hbox (59.74883pt too wide) detected at line 434
-\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H[] 
- H[] 
- H[]\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 
- \OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H[] 
- H[]\OT1/cmr/m/n/14.4 ) = \OMS/cmsy/m/n/14.4 H[] 
- \OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H[] 
- H[]\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 
- \OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H[] 
- H[]\OT1/cmr/m/n/14.4 ) = \OMS/cmsy/m/n/14.4 H[] 
- H[] 
- H[]
- []
-
-[14] [15] [16]
-Overfull \hbox (69.93718pt too wide) detected at line 503
-\OT1/cmr/m/n/14.4 1 = [] \OML/cmm/m/it/14.4 ; ^^Z \OT1/cmr/m/n/14.4 = [] \OML/c
-mm/m/it/14.4 ; ^^[[] \OT1/cmr/m/n/14.4 = [] \OML/cmm/m/it/14.4 ; ^^[[] \OT1/cmr
-/m/n/14.4 = [] \OML/cmm/m/it/14.4 ; ^^[[] \OT1/cmr/m/n/14.4 = []  \OML/cmm/m/it
-/14.4 :
- []
-
-[17] [18]
-
-LaTeX Warning: Reference `fig:tensorBoth' on page 19 undefined on input line 54
+LaTeX Warning: Reference `fig:tensorBoth' on page 15 undefined on input line 61
 4.
 
-[19]
 
-LaTeX Warning: Reference `fig:tensorBoth' on page 20 undefined on input line 54
+LaTeX Warning: Reference `fig:tensorBoth' on page 15 undefined on input line 61
 6.
 
 Package epstopdf Info: Source file: <tensorBoth.eps>
@@ -376,16 +327,16 @@ Package epstopdf Info: Source file: <tensorBoth.eps>
 (epstopdf)                    size: 7169 bytes
 (epstopdf)             Command: <repstopdf --outfile=tensorBoth-eps-converted-t
 o.pdf tensorBoth.eps>
-(epstopdf)             \includegraphics on input line 550.
+(epstopdf)             \includegraphics on input line 620.
 Package epstopdf Info: Output file is already uptodate.
-<tensorBoth-eps-converted-to.pdf, id=111, 1529.715pt x 429.605pt>
+<tensorBoth-eps-converted-to.pdf, id=103, 1529.715pt x 429.605pt>
 File: tensorBoth-eps-converted-to.pdf Graphic file (type pdf)
 
 <use tensorBoth-eps-converted-to.pdf>
-Package pdftex.def Info: tensorBoth-eps-converted-to.pdf used on input line 550
+Package pdftex.def Info: tensorBoth-eps-converted-to.pdf used on input line 620
 .
 (pdftex.def)             Requested size: 422.77661pt x 118.72842pt.
- [20 <./tensorBoth-eps-converted-to.pdf>]
+ [15]
 Package epstopdf Info: Source file: <qubit4simple.eps>
 (epstopdf)                    date: 2017-09-30 14:39:07
 (epstopdf)                    size: 4362 bytes
@@ -394,17 +345,17 @@ Package epstopdf Info: Source file: <qubit4simple.eps>
 (epstopdf)                    size: 4578 bytes
 (epstopdf)             Command: <repstopdf --outfile=qubit4simple-eps-converted
 -to.pdf qubit4simple.eps>
-(epstopdf)             \includegraphics on input line 568.
+(epstopdf)             \includegraphics on input line 638.
 Package epstopdf Info: Output file is already uptodate.
 
-<qubit4simple-eps-converted-to.pdf, id=120, 418.56375pt x 300.12125pt>
+<qubit4simple-eps-converted-to.pdf, id=107, 418.56375pt x 300.12125pt>
 File: qubit4simple-eps-converted-to.pdf Graphic file (type pdf)
 
 <use qubit4simple-eps-converted-to.pdf>
-Package pdftex.def Info: qubit4simple-eps-converted-to.pdf used on input line 5
-68.
+Package pdftex.def Info: qubit4simple-eps-converted-to.pdf used on input line 6
+38.
 (pdftex.def)             Requested size: 140.92792pt x 101.04613pt.
- [21 <./qubit4simple-eps-converted-to.pdf>]
+ [16 <./tensorBoth-eps-converted-to.pdf> <./qubit4simple-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <group1.eps>
 (epstopdf)                    date: 2017-09-30 14:39:07
 (epstopdf)                    size: 74692 bytes
@@ -413,14 +364,16 @@ Package epstopdf Info: Source file: <group1.eps>
 (epstopdf)                    size: 38952 bytes
 (epstopdf)             Command: <repstopdf --outfile=group1-eps-converted-to.pd
 f group1.eps>
-(epstopdf)             \includegraphics on input line 593.
+(epstopdf)             \includegraphics on input line 663.
 Package epstopdf Info: Output file is already uptodate.
- <group1-eps-converted-to.pdf, id=129, 814.04124pt x 236.885pt>
+
+<group1-eps-converted-to.pdf, id=122, 814.04124pt x 236.885pt>
 File: group1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use group1-eps-converted-to.pdf>
-Package pdftex.def Info: group1-eps-converted-to.pdf used on input line 593.
+Package pdftex.def Info: group1-eps-converted-to.pdf used on input line 663.
 (pdftex.def)             Requested size: 375.80542pt x 109.35878pt.
+ [17 <./group1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <group2.eps>
 (epstopdf)                    date: 2017-09-30 14:39:07
 (epstopdf)                    size: 58257 bytes
@@ -429,240 +382,70 @@ Package epstopdf Info: Source file: <group2.eps>
 (epstopdf)                    size: 30250 bytes
 (epstopdf)             Command: <repstopdf --outfile=group2-eps-converted-to.pd
 f group2.eps>
-(epstopdf)             \includegraphics on input line 602.
+(epstopdf)             \includegraphics on input line 672.
 Package epstopdf Info: Output file is already uptodate.
 
-<group2-eps-converted-to.pdf, id=130, 480.79625pt x 307.1475pt>
+<group2-eps-converted-to.pdf, id=129, 480.79625pt x 307.1475pt>
 File: group2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use group2-eps-converted-to.pdf>
-Package pdftex.def Info: group2-eps-converted-to.pdf used on input line 602.
+Package pdftex.def Info: group2-eps-converted-to.pdf used on input line 672.
 (pdftex.def)             Requested size: 234.87749pt x 150.04898pt.
- [22]
-Overfull \hbox (17.5639pt too wide) in paragraph at lines 608--609
-[]\OT1/cmr/m/n/14.4 More gen-er-ally, we can con-struct states of cyclic spin c
-hains of size $2\OML/cmm/m/it/14.4 L; \OT1/cmr/m/n/14.4 4\OML/cmm/m/it/14.4 L; 
-\OT1/cmr/m/n/14.4 6\OML/cmm/m/it/14.4 L; [] $
+ [18 <./group2-eps-converted-to.pdf>] [19]
+[20]
+Overfull \hbox (14.01709pt too wide) in paragraph at lines 746--747
+[]\OT1/cmr/m/n/12 Mathematically, the set of al-lowed SLOCC op-er-a-tions cor-r
+e-sponds to the group $\OML/cmm/m/it/12 G \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 SL
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 d[]; \U/msb/m/n/12 C\OT1/cmr/m/n/12 ) \OMS/cm
+sy/m/n/12 ^^B
  []
 
-[23 <./group1-eps-converted-to.pdf> <./group2-eps-converted-to.pdf>] [24]
+[21] [22] [23] [24] [25]
 
-LaTeX Warning: Citation `Kly02' on page 25 undefined on input line 629.
-
-
-LaTeX Warning: Citation `Kly07' on page 25 undefined on input line 629.
-
-
-LaTeX Warning: Citation `wallach' on page 25 undefined on input line 629.
-
-
-LaTeX Warning: Citation `Walter' on page 25 undefined on input line 629.
-
-[25]
-Overfull \hbox (26.02742pt too wide) in paragraph at lines 633--634
-\OT1/cmr/m/n/14.4 We be-gin with the full space of (un-nor-mal-ized) states. Fo
-r di-men-sions $(\OML/cmm/m/it/14.4 d[]; [] ; d[]\OT1/cmr/m/n/14.4 )$,
- []
+LaTeX Warning: Citation `dc' on page 26 undefined on input line 883.
 
 [26] [27] [28]
-
-LaTeX Warning: Citation `mfk' on page 29 undefined on input line 691.
-
-
-LaTeX Warning: Citation `Hoskins' on page 29 undefined on input line 691.
-
-[29] [30] [31] [32]
-
-LaTeX Warning: Citation `VDD' on page 33 undefined on input line 758.
-
-
-Overfull \hbox (7.83812pt too wide) in paragraph at lines 762--763
-\OT1/cmr/m/n/14.4 Let us now dis-cuss the al-ge-braic char-ac-ter-i-za-tion of 
-the GIT quo-tient $\OML/cmm/m/it/14.4 P\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H\
-OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 = =G$\OT1/cmr/m/n/14.4 .
+Overfull \hbox (6.42073pt too wide) in paragraph at lines 962--963
+[]\OT1/cmr/m/n/12 Both the-o-rems fol-low by an-a-lyz-ing the fol-low-ing re-cu
+r-sive re-sult for the di-men-sion of $\OMS/cmsy/m/n/12 H[]\OML/cmm/m/it/12 =K$
+\OT1/cmr/m/n/12 : 
  []
 
-[33]
+[29] [30]
 
-LaTeX Warning: Citation `mfk' on page 34 undefined on input line 782.
+LaTeX Warning: Citation `elashvili' on page 31 undefined on input line 1024.
 
+[31] [32] [33]
 
-LaTeX Warning: Citation `dc' on page 34 undefined on input line 782.
+LaTeX Warning: Reference `thm.GIT' on page 34 undefined on input line 1123.
 
-[34]
-Overfull \hbox (4.93495pt too wide) in paragraph at lines 811--812
-[]\OT1/cmr/m/n/14.4 For di-men-sions $(\OML/cmm/m/it/14.4 d[]; [] ; d[]\OT1/cmr
-/m/n/14.4 )$, there ex-ist lo-cally max-i-mally en-tan-gled states
- []
-
-[35]
-
-LaTeX Warning: Citation `mathpaper' on page 36 undefined on input line 840.
-
-[36]
-Overfull \hbox (66.09059pt too wide) detected at line 847
-[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 P\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 
-H\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 = =G\OT1/cmr/m/n/14.4 )[] = [](\OML/cmm/
-m/it/14.4 P\OT1/cmr/m/n/14.4 (\OMS/cmsy/m/n/14.4 H\OT1/cmr/m/n/14.4 )) \OMS/cms
-y/m/n/14.4 ^^@ []\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 G\OT1/cmr/m/n/14.4 ) = \
-OML/cmm/m/it/14.4 d[] [] d[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 d[] \OMS
-/cmsy/m/n/14.4 ^^@ [] \OML/cmm/m/it/14.4 d[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/
-14.4 n \OMS/cmsy/m/n/14.4 ^^@ \OT1/cmr/m/n/14.4 1 \OMS/cmsy/m/n/14.4 ^^Q \OT1/c
-mr/m/n/14.4 ^^A(\OML/cmm/m/it/14.4 d[]; [] d[]\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it
-/14.4 :
- []
-
-
-LaTeX Warning: Citation `mathpaper' on page 37 undefined on input line 850.
-
-[37]
-
-LaTeX Warning: Citation `mathpaper' on page 38 undefined on input line 859.
-
-[38] [39]
-
-LaTeX Warning: Citation `mathpaper' on page 40 undefined on input line 894.
-
-
-LaTeX Warning: Citation `elashvili' on page 40 undefined on input line 894.
-
-
-LaTeX Warning: Citation `popov' on page 40 undefined on input line 894.
-
-
-Overfull \hbox (8.94676pt too wide) in paragraph at lines 894--895
-[]\OT1/cmr/m/n/14.4 In this case, it is not hard to show that the naive di-men-
-sion $^^A(\OML/cmm/m/it/14.4 d[]; d[]; [] d[]\OT1/cmr/m/n/14.4 )$
- []
-
-
-LaTeX Warning: Citation `mathpaper' on page 40 undefined on input line 907.
-
-
-LaTeX Warning: Reference `thm.R' on page 40 undefined on input line 911.
-
-
-LaTeX Warning: Reference `thm.dims' on page 40 undefined on input line 911.
-
-[40]
-
-LaTeX Warning: Reference `prop:Rcases' on page 41 undefined on input line 918.
-
-
-LaTeX Warning: Reference `thm.R' on page 41 undefined on input line 918.
-
-
-LaTeX Warning: Reference `thm.dims' on page 41 undefined on input line 918.
-
-
-LaTeX Warning: Reference `gmd' on page 41 undefined on input line 925.
-
-[41]
-Overfull \hbox (10.20544pt too wide) in paragraph at lines 945--947
-\OT1/cmr/m/n/14.4 nonempty for $\OML/cmm/m/it/14.4 d[] \OT1/cmr/m/n/14.4 = \OML
-/cmm/m/it/14.4 d[]$\OT1/cmr/m/n/14.4 ; in this case, the re-cur-sion ter-mi-nat
-es at $(1\OML/cmm/m/it/14.4 ; [] ; \OT1/cmr/m/n/14.4 1\OML/cmm/m/it/14.4 ; \OT1
-/cmr/m/n/14.4 2\OML/cmm/m/it/14.4 ; d[]; d[]\OT1/cmr/m/n/14.4 )$
- []
-
-
-Overfull \hbox (6.1069pt too wide) in paragraph at lines 952--953
-\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 d[]; d[]; d[]\OT1/cmr/m/n/14.4 )$ \OT1/cm
-r/m/it/14.4 with $\OT1/cmr/m/n/14.4 ^^A(\OML/cmm/m/it/14.4 d[]; d[]; d[]\OT1/cm
-r/m/n/14.4 ) \OML/cmm/m/it/14.4 < \OT1/cmr/m/n/14.4 0$ \OT1/cmr/m/it/14.4 or $\
-OML/cmm/m/it/14.4 d[] \OMS/cmsy/m/n/14.4 ^^U \OML/cmm/m/it/14.4 d[]\OT1/cmr/m/n
-/14.4 (\OML/cmm/m/it/14.4 d[]; d[]\OT1/cmr/m/n/14.4 )$\OT1/cmr/m/it/14.4 . Then
- we have $\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 d[]; d[]; d[]\OT1/cmr/m/n/14.4 
-) =
- []
-
-[42]
-Overfull \hbox (90.39671pt too wide) in paragraph at lines 969--971
-\OT1/cmr/m/n/14.4 repeatedly \OT1/cmr/m/it/14.4 with-out re-order-ing \OT1/cmr/
-m/n/14.4 to de-fine a se-quence $((\OML/cmm/m/it/14.4 A; B[]; C[]\OT1/cmr/m/n/1
-4.4 ) \OMS/cmsy/m/n/14.4 ^^Q \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 A; d[]; d[]\
-OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 A;
- B[]; C[]\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; [] \OT1/cmr/m/n/14.4 )$.
- []
-
-[43]
-
-LaTeX Warning: Reference `thm.GIT' on page 44 undefined on input line 993.
-
-[44]
-Overfull \hbox (66.88924pt too wide) detected at line 1018
-[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t[]; t[]; [] ; t[]\OT1/cmr/m/n/14.4 ) \
-OMS/cmsy/m/n/14.4 
- []\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t[]; t[]; [] ; t[]\OT1/cmr/m/n/14.4 ) 
-\OMS/cmsy/m/n/14.4 
- [] 
- []\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t[]; t[]; [] ; t[]\OT1/cmr/m/n/14.4 ) 
-\OML/cmm/m/it/14.4 :
- []
-
-[45] [46] [47] [48]
-Overfull \hbox (10.5451pt too wide) in paragraph at lines 1087--1088
-\OT1/cmr/m/n/14.4 In this case, any di-ag-o-nal one-parameter sub-group of $\OM
-L/cmm/m/it/14.4 G \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 SL\OT1/cmr/m/n/14.4 (2
-\OML/cmm/m/it/14.4 ; \U/msb/m/n/14.4 C\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ^^
-B \OML/cmm/m/it/14.4 SL\OT1/cmr/m/n/14.4 (2\OML/cmm/m/it/14.4 ; \U/msb/m/n/14.4
- C\OT1/cmr/m/n/14.4 ) \OMS/cmsy/m/n/14.4 ^^B
- []
-
-
-Overfull \hbox (63.3771pt too wide) detected at line 1096
-[]
- []
-
-[49] [50]
-Overfull \hbox (7.37462pt too wide) in paragraph at lines 1128--1128
+[34] [35] [36] [37] [38] [39]
+Overfull \hbox (7.37462pt too wide) in paragraph at lines 1255--1255
 []\OT1/cmr/bx/n/17.28 Explicit con-struc-tion of all LME states for $\OT1/cmr/m
 /n/17.28 (\OML/cmm/m/it/17.28 d[]; d[]; d[]\OT1/cmr/m/n/17.28 ) =
  []
 
-[51]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 1143.
+LaTeX Font Warning: Command \large invalid in math mode on input line 1270.
 
-[52] [53] [54] [55]
+[40] [41] [42] [43]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 1281.
+LaTeX Font Warning: Command \large invalid in math mode on input line 1408.
 
 
-Overfull \hbox (2.15424pt too wide) detected at line 1282
-[] \OT1/cmr/m/n/14.4 = [] [] []
+Overfull \hbox (29.23499pt too wide) detected at line 1419
+\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 	[]\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 = [] []
+ [] []
  []
 
-[56]
-Overfull \hbox (126.20868pt too wide) detected at line 1292
-\OMS/cmsy/m/n/14.4 j\OT1/cmr/m/n/14.4 	[]\OMS/cmsy/m/n/14.4 i \OT1/cmr/m/n/14.4
- = [] [] [] []
- []
-
-[57] [58] [59] [60] [61] [62] [63]
-Overfull \hbox (12.02277pt too wide) in paragraph at lines 1549--1551
-\OT1/cmr/m/n/14.4 ists a rep-re-sen-ta-tion the-ory con-struc-tion of LME state
-s for the case $(\OML/cmm/m/it/14.4 d[]; d[]; d[]\OT1/cmr/m/n/14.4 ) =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1577
-[]\OT1/cmr/m/n/14.4 V. Hoskins, Ge-o-met-ric In-vari-ant The-ory and Sym-plec-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1577
-\OT1/cmr/m/n/14.4 tic Quo-tients, lec-ture notes, 2012, http://userpage.fu-
- []
-
-[64]
+[44] [45] [46] [47] [48] [49] [50]
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ½ in font cmr12!
 Missing character: There is no ï in font cmr12!
 Missing character: There is no ¿ in font cmr12!
 Missing character: There is no ½ in font cmr12!
- [65] (./LMEdraft.aux)
+ [51] (./LMEdraft.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -671,36 +454,39 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2667 strings out of 493089
- 35482 string characters out of 6134842
- 100966 words of memory out of 5000000
- 6108 multiletter control sequences out of 15000+600000
- 16507 words of font info for 64 fonts, out of 8000000 for 9000
+ 2668 strings out of 493089
+ 35486 string characters out of 6134842
+ 103080 words of memory out of 5000000
+ 6106 multiletter control sequences out of 15000+600000
+ 16199 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,14n,24p,1562b,233s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,24p,1196b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on LMEdraft.pdf (66 pages, 714290 bytes).
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on LMEdraft.pdf (54 pages, 734906 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 316 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
