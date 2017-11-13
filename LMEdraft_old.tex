@@ -66,19 +66,18 @@
 
 \vspace*{15mm}
 \vspace*{1mm}
-Samuel Leutheusser$^a$, Jim Bryan$^b$,  Zinovy Reichstein$^b$, and Mark Van Raamsdonk$^a$
+Jim Bryan$^a$, Samuel Leutheusser$^b$, Zinovy Reichstein$^a$, and Mark Van Raamsdonk$^b$
 \vspace*{1cm}
-\let\thefootnote\relax\footnote{sam.leutheusser@alumni.ubc.ca,jbryan@math.ubc.ca,reichst@math.ubc.ca,mav@phas.ubc.ca}
+\let\thefootnote\relax\footnote{jbryan@math.ubc.ca,sam.leutheusser@alumni.ubc.ca,reichst@math.ubc.ca,mav@phas.ubc.ca}
 
-{${}^{a}$ Department of Physics and Astronomy,
-University of British Columbia\\
-6224 Agricultural Road,
-Vancouver, B.C., V6T 1Z2, Canada\\
-${}^{b}$ Department of Mathematics,
+{${}^{a}$ Department of Mathematics,
 University of British Columbia\\
 1984 Mathematics Road,
-Vancouver, B.C., V6T 1Z1, Canada
-}
+Vancouver, B.C., V6T 1Z1, Canada\\
+${}^{b}$ Department of Physics and Astronomy,
+University of British Columbia\\
+6224 Agricultural Road,
+Vancouver, B.C., V6T 1Z2, Canada}
 
 \vspace*{1cm}
 %%\maketitle
@@ -94,41 +93,19 @@ LME states by giving necessary and sufficient conditions on the
 subsystem dimensions $(d_1, d_2, \dots, d_n)$. When the space of such
 states is not empty, its quotient by local unitary transformations is
 a (possibly singular) K\"ahler manifold that can be described as the
-zero set of polynomials in weighted projective space.  Points of this manifold 
-are in bijective correspondence with
-quantum states with ``generic'' entanglement up to SLOCC equivalence.
-We determine the dimension of this manifold for every choice of $(d_1, d_2, \dots, d_n)$. 
-We also give a general construction for a special class of ``stabilizer'' LME states 
-based on the following observation: for any compact group $H$ (possibly finite) 
+zero set of polynomials in weighted projective space.  This manifold is the space
+of quantum states with ``generic'' entanglement up to SLOCC equivalence.
+We determine the dimension of this space. We also give a general
+construction for a special class of ``stabilizer'' LME states based on
+the following observation: for any compact group $H$ (possibly finite) 
 acting irreducibly on each subsystem, states invariant under
 $H$ up to a phase are LME. Finally, for a tripartite system with
 subsystems of dimensions $(2,A,B)$, we give an explicit construction
 of all LME states.
-\begin{comment}
-For a multipart quantum system, a locally maximally entangled (LME)
-state is one where each elementary subsystem is maximally entangled
-with its complement, i.e. the reduced density matrix for each
-elementary subsystem is a multiple of the identity matrix. In this
-paper, we provide a complete answer for which multipart systems admit
-LME states by giving necessary and sufficient conditions on the
-subsystem dimensions $(d_1, d_2, \dots, d_n)$. When the space of such
-states is not empty, its quotient by local unitary transformations is
-a (possibly singular) K\"ahler manifold that can be described as the
-zero set of polynomials in weighted projective space. We provide a
-general result for the dimension of this space, which is also
-equivalent to the full space of quantum states with ``generic''
-entanglement up to SLOCC equivalence. We provide a general
-construction for a special class of ``stabilizer'' LME states based on
-the following observation: for any compact group $H$ (including finite
-groups) acting irreducibly on each subsystem, states invariant under
-$H$ up to a phase are LME. Finally, for a tripartite system with
-subsystems of dimensions $(2,A,B)$, we give an explicit construction
-of all LME states.
-\end{comment}
 \end{abstract}
 
 \end{titlepage}
-\tableofcontents
+\tableof contents
 
 \section{Introduction}
 
@@ -139,17 +116,17 @@ Consider a multipart quantum system whose pure states are vectors in a tensor pr
 with subsystems ${\cal H}_i$ of dimension $d_i$. We will say that a state in ${\cal H}$ is locally maximally entangled (LME) if the reduced density matrix corresponding to each elementary subsystem is a scalar multiple of the identity operator on that subsystem.\footnote{Some authors refer to such states as locally maximally mixed.}
 Fixing the dimension vector $(d_1,\dots,d_n)$, we define ${\cal H}_{LME} \subset {\cal H}$ to be the subset of states which are locally maximally entangled:
 \be
-{\cal H}_{LME} = \left\{|\Psi \rangle \in {\cal H} \; \Big| \; \rho_i \equiv \tr_{\bar{i}}|\Psi \rangle \langle \Psi | = \frac{1}{d_i} \identity \right\}\; .
+{\cal H}_{LME} = \left\{|\Psi \rangle \in {\cal H} \; \Big| \; \rho_i \equiv \tr_{\bar{i}}|\Psi \rangle \langle \Psi | = {1 \over d_i} \identity \right\}\; .
 \ee
 LME states play an important role in many applications of quantum mechanics and quantum information theory; examples include Bell states
 \be
 \label{Bell}
-|\Psi \rangle = \frac{1}{\sqrt{d}} \sum_{i} |i \rangle \otimes |i \rangle \in {\cal H}_d \otimes {\cal H}_d \; ,
+|\Psi \rangle = {1 \over \sqrt{d}} \sum_{i} |i \rangle \otimes |i \rangle \in {\cal H}_d \otimes {\cal H}_d \; ,
 \ee
 the GHZ state
 \be
 \label{GHZ}
-|\Psi \rangle = \frac{1}{\sqrt{2}} (|0 \rangle \otimes |0 \rangle \otimes |0 \rangle  + |1 \rangle \otimes |1 \rangle \otimes |1 \rangle) \in {\cal H}_2 \otimes {\cal H}_2 \otimes {\cal H}_2
+|\Psi \rangle = {1 \over \sqrt{2}} (|0 \rangle \otimes |0 \rangle \otimes |0 \rangle  + |1 \rangle \otimes |1 \rangle \otimes |1 \rangle) \in {\cal H}_2 \otimes {\cal H}_2 \otimes {\cal H}_2
 \ee
 and its generalizations, various quantum error-correcting code states, cluster states, and graph states.
 
@@ -180,11 +157,11 @@ space of LME states up to local unitary transformations has real
 dimension $2(n-3)$. It is equivalent to the space of collections of
 $n$ unit vectors in $\mathbb{R}^3$ adding to zero, with sets of
 vectors related by an element of $SO(3)$ considered as
-equivalent.\footnote{Remarkably, this space is also equivalent to $n$-tuples of
+equivalent. Remarkably, this space is also equivalent to $n$-tuples of
 points on $\mathbb{CP}^{1}$, with no more than $n/2$ of the points
 coinciding, up to M\"obius transformations. This is a very concrete
-realization of the Kempf-Ness equivalence between symplectic 
-and algebraic quotients which we discuss in subsequent sections.}
+realization of the Kempf-Ness equivalence between symplectic quotients
+and algebraic quotients which we discuss in subsequent sections.
 
 \subsubsection{Connection to representation theory}
 
@@ -207,83 +184,19 @@ symmetric group $S_3$.
 
 We show that all LME states obtained through this construction can be represented via tensor networks corresponding to tree graphs with trivalent vertices, where the edges are labeled with representations of $H$ and the tensors corresponding to each vertex are Clebsch-Gordon like coefficients which construct one representation from the product of the other two. Finally, we point out (based on an observation of Eliot Hijano) that it is possible to construct quantum systems for which all states are of this type by starting with a multipart quantum system whose symmetry group $H$ acts irreducibly on each subsystem and then gauging $H$.
 
-\subsubsection{General characterization of ${\cal H}_{LME}$}
-
-In sections 4 and 5, we move on to the question of
-characterizing the space ${\cal H}_{LME}$ in general. We review how our
-problem may be phrased as a natural question in symplectic
-geometry, and then as an equivalent question in algebraic geometry / geometric invariant theory.\footnote{
-These observations have been exploited a number of times in the past (see for example~\cite{Kly02}, \cite[\S~3]{Kly07}, \cite[\S~4]{wallach}, and \cite{Walter} for a review).} We offer a short summary of these equivalences at the end of this introduction.
- 
-Through these connections, the space ${\cal H}_{LME}/K$ of LME states with equivalence under local unitary transformations $K = U(d_1) \times \cdots \times U(d_1)$ is identified with the ``geometric invariant theory'' quotient of the full space of states $P({\cal H})$ by the larger group $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n, \mathbb{C})$ that is the complexification of $K$. This is the group associated with stochastic local operations and classical communications (SLOCC). Using this equivalence and the tools of geometric invariant theory, we provide necessary and sufficient conditions on the dimensions $\vec{d} = (d_1, \dots, d_n)$ that determine whether the space ${\cal H}_{LME}$ is non-empty, and we determine the dimension of ${\cal H}_{LME}/K$ in the non-empty cases.
-
-The existence condition is given as
-\begin{theorem}\label{thm.R}
-For a multipart Hilbert space with elementary subspace dimensions $\vec{d} = (d_1, \dots, d_n)$ there exist locally maximally entangled states if and only if $R(\vec{d}) \ge 0$, where
-\be
-R(\vec{d}) = \prod_i d_i + \sum_{k=1}^n (-1)^k \sum_{1 \le i_1 < \cdots < i_k \le n} (\gcd(d_{i_1},\dots,d_{i_2}))^2 \; .
-\ee
-\end{theorem}
-To state the result for the dimension of ${\cal H}_{LME}/K$ in the non-empty cases,  we define
-\be
-\label{gmd}
-{\rm g}_{max}(\vec{d}) \equiv \max_{1 \le i < j \le n} \gcd(d_i,d_j)
-\ee
-and define the {\it expected dimension}
-\be
-\Delta(\vec{d}) \equiv \left(\prod_i d_i - 1\right) - \sum_i (d_i^2 - 1) = \dim(P({\cal H})) - dim(G) \; .
-\ee
-Then our result for the dimension of ${\cal H}_{LME}/K$ is given by:
-\begin{theorem}\label{thm.dims}
-Let ${\cal H}$ be a multipart Hilbert space with elementary subspace dimensions $\vec{d} = (d_1, \dots, d_n)$. Then:
-
-If $\Delta(\vec{d}) > -2$, then $R > 0$ and $\dim({\cal H}_{LME}/K) = \Delta(\vec{d}) \ge 0$.
-
-If $\Delta(\vec{d}) = -2$, then $R > 0$ and $\dim({\cal H}_{LME}/K)  = \max ({\rm g}_{max}(\vec{d}) -3,0)$.
-
-If $\Delta(\vec{d}) < -2$, then $R \le 0$ and ${\cal H}_{LME}/K$ is a single point for $R=0$ and empty for $R<0$.
-\end{theorem}
-
-Both of these results follow from a recursive algorithm for the dimension of ${\cal H}_{LME}/K$ given as Theorem \ref{thm.States} below. Using this algorithm, we can also provide some more explicit results
-for the dimension of ${\cal H}_{LME}/K$.
-
-
-\begin{figure}
-\centering
-\includegraphics[width=0.7\textwidth]{23BC.eps}
-\caption{Properties of the space ${\cal H}_{LME}/K$ of locally maximally entangled states up to local unitary transfomations for tripartite systems with dimensions $(A=2,B,C)$ and $(A=3,B,C)$. In each plot, circles correspond to values of $(A,B,C)$ (plotted with axes $(B-A)$ and $(C-B)$ for fixed $A$) for which the necessary conditions $B \le C \le AB$ for the existence of LME states are satisfied. Empty circles indicate cases where LME states do not exist. Blue filled circles (on the left in the $A=3$ case) indicate cases where the dimension of ${\cal H}_{LME}/K$ is equal to the expected dimension $ABC - A^2 - B^2 - C^2 + 2$ of the quotient $P({\cal H})/G$. Black circles are non-empty cases with negative expected dimension but for which ${\cal H}_{LME}/K$ is a single point. Red circles are non-empty cases with expected dimension -2 for which ${\cal H}_{LME}/K$ is equivalent to a K\"ahler manifold describing unit vectors in $\mathbb{R}^3$ adding to zero with equivalence under $SO(3)$ rotations.}
-\label{fig:23BC}
-\end{figure}
-
-Generally, for fixed
-$(d_1,\dots, d_{n-1})$, there is a range of values $d_{n-1} \le d_n <
-d_*$ for which the ${\cal H}_{LME}/K$ is not empty and its dimension
-is the naive dimension of the quotient $P({\cal H})\GITquot G$ $\Delta(\vec{d})$. For $d_* \le d_n \le d_1 \cdots d_n$,
-this naive dimension is negative,\footnote{Specifically, $d_*$ is
-defined by setting $\Delta = -2$.} but there are sporadic values of
-$d_n$ in this range for which the space ${\cal H}_{LME}/K$ is
-nevertheless non-empty; it is given by a single point unless $\Delta =
--2$. For $n=3$, we are able to characterize the sporadic cases more explicitly; see Proposition~\ref{prop.Fib}.
-The results for dimensions $(2,B,C)$ and $(3,B,C)$ are displayed in figure \ref{fig:23BC}.
-
-\subsubsection{SLOCC classes with non-generic entanglement}
-
-There has been a significant amount of work on classifying the space of quantum states for various multipart systems up to SLOCC equivalence as a way to understand entanglement structures. As we described above, the space of LME states up to local unitary transformations is isomorphic to the space of SLOCC equivalence classes if we exclude the unstable states. Unstable states are states which can be mapped arbitrarily close to the zero vector by SLOCC transformations. In section 6 we offer a few comments on the classification of these  unstable states. We describe a set of normal forms for tensors describing states of multipart systems. We explain a procedure to determine which of these normal forms correspond to unstable subspaces and show how to determine the dimension of the unstable subspace corresponding to one of these normal forms. As an example, we treat the familiar case of three qubits, where the unstable states correspond to those in the $W$ class and the bipartite entangled states.
-
-We conclude the paper in section 7 with a discussion of an open problem in representation theory related to our results.
-
-\subsection{Mathematical characterization of ${\cal H}_{LME}/K$}
-
-To complete this introduction, we offer a brief summary of the mathematical connections underlying the main theorems; a more detailed account is provided in section 4.
-
-
 \subsubsection{Connection to symplectic geometry}
+
+In sections 4 and 5, we move on to the general question of
+characterizing the space ${\cal H}_{LME}$. We first review how our
+problem may be phrased as a natural question in symplectic
+geometry, and then as an equivalent question in algebraic geometry / geometric invariant theory.
+These observations have been exploited a number of times in the past (see for example~\cite{Kly02}, \cite[\S~3]{Kly07}, \cite[\S~4]{wallach}, and \cite{Walter} for a review).
 
 
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{cone.eps}
-\caption{Full Hilbert space ${\cal H}$. Horizontal sections correspond to states with specific normalization. These sections decompose into orbits of $K = SU(d_1) \times \cdots \times SU(d_n)$ (crosshatched horizontal ellipses). Orbits of $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n,\mathbb{C})$ (vertical) are made up of $K$-orbits with a range of normalizations. Unstable $G$-orbits (example on the left) include vectors arbitrarily close to 0. Polystable $G$-orbits (e.g. solid orbit on the right) include a single $K$-orbit of locally maximally entangled states (red ellipse) which minimize the norm on the $G$-orbit (at some positive value). The remaining semistable (i.e. not unstable) orbits are open, and each contains a single polystable orbit in its closure. $K$-orbits of maximally entangled states are in one-to-one correspondence with families of semistable $G$-orbits containing the same polystable orbit in their closure (e.g. the family denoted by dashed curves).}
+\caption{Full Hilbert space ${\cal H}$. Horizontal sections correspond to states with specific normalization. These sections decompose into orbits of $K = SU(d_1) \times \cdots \times SU(d_n)$ (crosshatched horizontal ellipses). Orbits of $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n,\mathbb{C})$ (vertical) are made up of $K$-orbits with a range of normalizations. Unstable $G$-orbits (example on the left) include vectors arbitrarily close to 0. Polystable $G$-orbits (e.g. solid orbit on the right) include a single $K$-orbit of locally maximally entangled states (red ellipse) which minimize the norm on the $G$-orbit (at some positive value). The remaining semistable (i.e. not unstable) orbits are open, and each contains a single polystable orbit in its closure. $K$-orbits of maximally entangled states are in one-to-one correspondence with families of semistable $G$-orbits containing the same polystable orbit in their closure (e.g. the family denoted by dashed curves).{\bf possibly mention stable orbits?}}
 \label{fig:cone}
 \end{figure}
 
@@ -315,9 +228,9 @@ from the point of view of symplectic geometry; it is called the
 \subsubsection{Connection to algebraic geometry and geometric invariant theory}
 
 By a remarkable duality known as the Kempf-Ness theorem, the
-symplectic quotient $\mu^{-1}(0)/K$ that we have identified with
-${\cal H}_{LME}/K$ is equivalent to another quotient $P({\cal H})\GITquot G$, 
-known as the {\it geometric invariant theory} (GIT)
+symplectic geometry $\mu^{-1}(0)/K$ that we have identified with
+${\cal H}_{LME}/K$ is exactly equivalent to another quotient $P({\cal
+H})\GITquot G$, known as the {\it geometric invariant theory} (GIT)
 quotient of the full space of states $P({\cal H})$ by the larger group
 $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n, \mathbb{C})$
 that is the complexification of $K$. This group is the set of local
@@ -355,8 +268,7 @@ precisely the minimum norm states on polystable orbits, and each
 polystable orbit always includes a single $K$-orbit or LME
 states. Thus, equivalence classes of LME states under $K$ are in
 one-to-one correspondence with equivalence classes of semistable
-$G$-orbits.\footnote{A $G$-orbit is called {stable} if it is the unique orbit in its equivalence class.}
-This is depicted in Figure~\ref{fig:cone}. In more
+$G$-orbits. This is depicted in figure \ref{fig:cone}. In more
 physical language, we can describe the semistable states as having
 ``generic'' entanglement; then the space of all states with generic
 entanglement under SLOCC equivalence is identified with the space of
@@ -376,10 +288,74 @@ $R_n(P_\alpha ) = 0$ then define the ${\cal H}_{LME}/K$ as an
 algebraic variety (i.e. the solution to a set of algebraic equations)
 in this projective space.
 
+\subsubsection{Necessary and sufficient conditions for existence}
+
+The identification of ${\cal H}_{LME}/K$ as a GIT quotient $P({\cal H})//G$ allows us to employ many existing tools and results in geometric invariant theory in order to characterize the space. In a companion paper \cite{mathpaper}, we use these tools to provide necessary and sufficient conditions on the dimensions $\vec{d} = (d_1, \dots, d_n)$ that determine whether the quotient $\mathbb{CP}^{d_1 \cdots d_n - 1}\GITquot (SL(d_1, \mathbb{C}) \times \cdots \times SL(d_1, \mathbb{C}))$ is non-empty, and to determine its dimension in the non-empty cases. 
+
+Interpreting these results in the quantum mechanics context immediately gives the existence condition for LME states as
+\begin{theorem}\label{thm.R}
+For a multipart Hilbert space with elementary subspace dimensions $\vec{d} = (d_1, \dots, d_n)$ there exist locally maximally entangled states if and only if $R(\vec{d}) \ge 0$, where
+\be
+R(\vec{d}) = \prod_i d_i + \sum_{k=1}^n (-1)^k \sum_{1 \le i_1 < \cdots < i_k \le n} (\gcd(d_{i_1},\dots,d_{i_2}))^2 \; .
+\ee
+\end{theorem}
+To state the result for the dimension of ${\cal H}_{LME}/K$ in the non-empty cases,  we define
+\be
+\label{gmd}
+{\rm g}_{max}(\vec{d}) \equiv \max_{1 \le i < j \le n} \gcd(d_i,d_j)
+\ee
+and define the {\it expected dimension}
+\be
+\label{defDelta}
+\Delta(\vec{d}) \equiv \left(\prod_i d_i - 1 \right) - \sum_i (d_i^2 - 1) = \dim(P({\cal H})) - dim(G) \; .
+\ee
+Then our result for the dimension of ${\cal H}_{LME}/K$ is given by:
+\begin{theorem}\label{thm.dims}
+Let ${\cal H}$ be a multipart Hilbert space with elementary subspace dimensions $\vec{d} = (d_1, \dots, d_n)$. Then:
+
+If $\Delta(\vec{d}) > -2$, then $R > 0$ and $\dim({\cal H}_{LME}/K) = \Delta(\vec{d}) \ge 0$.
+
+If $\Delta(\vec{d}) = -2$, then $R > 0$ and $\dim({\cal H}_{LME}/K)  = \max ({\rm g}_{max}(\vec{d}) -3,0)$.
+
+If $\Delta(\vec{d}) < -2$, then $R \le 0$ and ${\cal H}_{LME}/K$ is a single point for $R=0$ and empty for $R<0$.
+\end{theorem}
+
+Both of these results follow from a recursive algorithm for the dimension of ${\cal H}_{LME}/K$ given as Theorem \ref{thm.States} below. Using this algorithm, we can also provide some more explicit results
+for the dimension of ${\cal H}_{LME}/K$.
 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{23BC.eps}
+\caption{Properties of the space ${\cal H}_{LME}/K$ of locally maximally entangled states up to local unitary transfomations for tripartite systems with dimensions $(A=2,B,C)$ and $(A=3,B,C)$. In each plot, circles correspond to values of $(A,B,C)$ (plotted with axes $(B-A)$ and $(C-B)$ for fixed $A$) for which the necessary conditions $B \le C \le AB$ for the existence of LME states are satisfied. Empty circles indicate cases where LME states do not exist. Blue filled circles (on the left in the $A=3$ case) indicate cases where the dimension of ${\cal H}_{LME}/K$ is equal to the expected dimension $ABC - A^2 - B^2 - C^2 + 2$ of the quotient $P({\cal H})/G$. Black circles are non-empty cases with negative expected dimension but for which ${\cal H}_{LME}/K$ is a single point. Red circles are non-empty cases with expected dimension -2 for which ${\cal H}_{LME}/K$ is equivalent to a K\"ahler manifold describing unit vectors in $\mathbb{R}^3$ adding to zero with equivalence under $SO(3)$ rotations.}
+\label{fig:23BC}
+\end{figure}
+
+Generally, for fixed
+$(d_1,\dots, d_{n-1})$, there is a range of values $d_{n-1} \le d_n <
+d_*$ for which the ${\cal H}_{LME}/K$ is not empty and its dimension
+is the expected dimension $\Delta$ defined in (\ref{defDelta}). For $d_* \le d_n \le d_1 \cdots d_n$,
+this naive dimension is negative \footnote{Specifically, $d_*$ is
+defined by setting $\Delta = -2$.} but there are sporadic values of
+$d_n$ in this range for which the space ${\cal H}_{LME}/K$ is
+nevertheless non-empty. In these cases, ${\cal H}_{LME}/K$ is a single point unless $\Delta =
+-2$, in which case it has dimension $\max ({\rm g}_{max}(\vec{d}) -3,0)$.
+
+For $n=3$, we are able to characterize the sporadic cases more explicitly, showing that they are all of the form $(A, f_i, f_{i+1})$ where $(f_i,f_{i+1})$ are successive terms in a Fibonnaci-like sequence defined by
+\be
+\label{Fib}
+f_{i+1} = A f_i - f_{i-1}
+\ee
+with seed values $(f_0,f_1)$ in a set $S_A$ described in detail in section 5 below. 
+
+Explicit results for dimensions $(2,B,C)$ and $(3,B,C)$ are displayed in figure \ref{fig:23BC}.
 
 
+\subsubsection{SLOCC classes with non-generic entanglement}
+
+There has been a significant amount of work on classifying the space of quantum states for various multipart systems up to SLOCC equivalence as a way to understand entanglement structures. As we described above, the space of LME states up to local unitary transformations is isomorphic to the space of SLOCC equivalence classes if we exclude the unstable states which can be mapped arbitrarily close to the zero vector by SLOCC transformations. In section 6 we offer a few comments on the classification of these remaining unstable states. We describe a set of normal forms for tensors describing states of multipart systems. We explain a procedure to determine which of these normal forms correspond to unstable subspaces and show how to determine the dimension of the unstable subspace corresponding to one of these normal forms. As an example, we treat the familiar case of three qubits, where the unstable states correspond to those in the $W$ class and the bipartite entangled states.
+
+We conclude the paper in section 7 with a discussion of possible applications of our results.
 
 \section{Setup and simple cases}
 
@@ -397,7 +373,7 @@ where states $|i_k \rangle$ with $1 \le i_k \le d_k$ form an orthonormal basis o
 \ee
 A locally maximally entangled state $|\Psi \rangle$ is defined as a state such that for every $k$ we have
 \be
-\rho_{j_k} {}^{l_k} = \frac{1}{d_k} \delta_{j_k} {}^{l_k} \; .
+\rho_{j_k} {}^{l_k} = {1 \over d_k} \delta_{j_k} {}^{l_k} \; .
 \ee
 
 \subsection{The Schmidt decomposition, bipartite systems, general necessary conditions}
@@ -410,7 +386,7 @@ where $|\psi_i^A\rangle$ are orthonormal states in ${\cal H}_A$, $|\psi_i^{\bar{
 \be
 \rho_1 = \sum_i p_i |\psi_i^A \rangle \langle \psi_i^A| \; .
 \ee
-This is a multiple of the identity operator if and only if $\{|\psi_i^A \rangle\}$ form an orthonormal basis of ${\cal H}_A$ and $p_i = \dfrac{1}{ d_A}$ for all $i$. This is possible only if the dimension of ${\cal H}_A$ is less than or equal to the dimension of ${\cal H}_{\bar{A}}$, since otherwise it would be impossible to choose $|\psi_i^{\bar{A}} \rangle$ orthonormal.
+This is a multiple of the identity operator if and only if $\{|\psi_i^A \rangle\}$ form an orthonormal basis of ${\cal H}_A$ and $p_i = {1 \over d_A}$ for all $i$. This is possible only if the dimension of ${\cal H}_A$ is less than or equal to the dimension of ${\cal H}_{\bar{A}}$, since otherwise it would be impossible to choose $|\psi_i^{\bar{A}} \rangle$ orthonormal.
 
 We can consider a general system with dimensions $(d_1,\dots, d_n)$ as a bipartite system with ${\cal H}_A = {\cal H}_k$ and ${\cal H}_{\bar{A}} = \otimes_{i \ne k} {\cal H}_i$. Then a state $|\Psi \rangle \in {\cal H} = \otimes {\cal H}_i$ can be LME only if $\rho_k \equiv \rho_A$ is proportional to the identity; we have just seen that this requires $d_A \le d_{\bar{A}}$, so we arrive at general necessary conditions
 \be
@@ -424,11 +400,9 @@ for the existence of locally maximally mixed states. It has been suggested that 
 For a two-part system, the necessary conditions (\ref{necessary}) give
 immediately that $d_1 = d_2 \equiv d$ in order for there to exist LME
 states. The discussion in the previous subsection also implies that
-such a state can be written via the Schmidt decomposition as 
-\be
-\label{LME2} |\Psi \rangle = \frac{1}{\sqrt{d}} \sum_i |\psi_i^1
-\rangle \otimes |\psi_i^2 \rangle \ee 
-where $|\psi_i^1 \rangle$ and
+such a state can be written via the Schmidt decomposition as \be
+\label{LME2} |\Psi \rangle = {1 \over \sqrt{d}} \sum_i |\psi_i^1
+\rangle \otimes |\psi_i^2 \rangle \ee where $|\psi_i^1 \rangle$ and
 $|\psi_i^2 \rangle$ are orthonormal bases of ${\cal H}_1$ and ${\cal
 H}_2$. Any state of this form is in ${\cal H}_{LME}$. The group of
 local unitary transformations in $K = SU(d) \times SU(d)$ allow us to
@@ -459,10 +433,8 @@ For $B=C$, we can describe all possible LME states in terms of a set
 $\{\vec{n}_i \}$ of unit vectors in $\mathbb{R}^3$ adding to zero. We
 associate to $\vec{n}_i$ the qubit state $|\vec{n}_i \rangle$ for
 which $S_{\vec{n}_i} |\vec{n}_i \rangle = (\hbar/2)|\vec{n}_i \rangle$
-{\bf explain more}. Then the state 
-\be \frac{1}{\sqrt{B}} \sum_{i=1}^B
-|n_{i} \rangle \otimes |i \rangle \otimes |i \rangle \ee 
-is LME, and
+{\bf explain more}. Then the state \be {1 \over \sqrt{B}} \sum_{i=1}^B
+|n_{i} \rangle \otimes |i \rangle \otimes |i \rangle \ee is LME, and
 all LME states for $(d_1,d_2,d_3) = (2,B,B)$ can be obtained from
 states of this form by local unitary transformations. Transformations
 which simultaneously rotate all the vectors in $\mathbb{R}^3$ also
@@ -474,7 +446,7 @@ $B=2$ and $B=3$, and a space of real dimension $2(B-3)$ for $B \ge 3$.
 
 For $(B,C)=(NK,(N+1)K)$, we show that there is a unique LME state up to local unitary transformations. In the case $K=1$, we can write this state explicitly as
 \be
-|\Psi_{(2,N,N+1)} \rangle = \frac{1}{\sqrt{(N+1)}} \sum_{b=1}^N \left\{ \sqrt{\frac{N + 1 - b}{N}} |0 \rangle \otimes  |b  \rangle \otimes |b \rangle + \sqrt{\frac{{b}{N}}  |1 \rangle \otimes|b \rangle \otimes |b+1 \rangle \right\} \; .
+|\Psi_{(2,N,N+1)} \rangle = {1 \over \sqrt{(N+1)}} \sum_{b=1}^N \left\{ \sqrt{N + 1 - b \over N} |0 \rangle \otimes  |b  \rangle \otimes |b \rangle + \sqrt{b \over N}  |1 \rangle \otimes|b \rangle \otimes |b+1 \rangle \right\} \; .
 \ee
 For general $K$, we can write the LME state a tensor product
 \be
@@ -482,7 +454,7 @@ For general $K$, we can write the LME state a tensor product
 \ee
 where $|\Psi_{(K,K)} \rangle$ is the Bell state
 \be
-|\Psi_{(K,K)} \rangle = \frac{1}{\sqrt{K}}  \sum_{i=1}^K  |i \rangle \otimes  |i \rangle \; .
+|\Psi_{(K,K)} \rangle = {1 \over \sqrt{K}}  \sum_{i=1}^K  |i \rangle \otimes  |i \rangle \; .
 \ee
 The tensor product state lives in a Hilbert space
 \be
@@ -492,13 +464,13 @@ as desired, where subscripts indicate dimensions.
 
 \section{Locally maximally entangled states from representation theory}
 
-In this section, we describe a special class of LME states that can be constructed using data coming from the representation theory of arbitrary finite and compact groups. We will see that most of the examples in the previous section can be understood in this way and that this method allows construction of explicit LME states in many other cases (or possibly even for all cases $(d_1, \dots, d_n)$ where LME states exist; see section 7.).
+In this section, we describe a special class of LME states that can be constructed using data coming from the representation theory of arbitrary finite and compact groups. We will see that most of the examples in the previous section can be understood in this way and that this method allows construction of explicit LME states in many other cases (or possibly even for all cases $(d_1, \dots, d_n)$ where LME states exist).
 
 We begin with
 \begin{theorem}
 Let $|\Psi \rangle$ be a pure state in a quantum system with Hilbert space
 \[
-{\cal H} = {\cal H}_A \otimes {\cal H}_{\bar{A}} \, ,
+{\cal H} = {\cal H}_A \otimes {\cal H}_{\bar{A}} \;
 \]
 where $A$ and $\bar{A}$ label a subsystem and its complementary
 subsystem. Let $H$ be a subgroup of $U(d_A) \times U(d_{\bar{A}})$
@@ -508,7 +480,7 @@ invariant under $H$ up to a phase (i.e. $h|\Psi \rangle = e^{i
 matrix $\rho_A$ is maximally mixed.
 \end{theorem}
 \begin{proof}
-If $|\Psi \rangle$ is invariant under $H$ up to a phase, then the density matrix $\rho_A$ is invariant under the action of $H$. Letting $U_h$ be the representative of $h \in H$ in $U(d_A)$, we then have that for all $h$, $U_h \rho_A U_h^\dagger = \rho_A$, or $[U_h, \rho_A] = 0$. Since $h \to U_h$ is an irreducible representation of $H$, Schur's Lemma implies that $\rho_A$ is a multiple of the identity operator.\footnote{More directly, if $\rho_A$ is not maximally mixed, then $\rho_A^{ad} = \rho_A - \dfrac{1}{d_A} \identity$ does not vanish, and transforms in the adjoint representation of $U(d_A)$. We have seen that $U_h$ commutes with $\rho_A$ and therefore with $\rho^{ad}_A$ for all $h$. Acting on $A$, $U_h$ therefore does not mix subspaces with different eigenvalues for $\rho^{ad}_A$. Since $\rho^{ad}_A$ is nonvanishing and traceless, it must have at least two different eigenvalues, so there are proper invariant subspaces for the action of $H$, in contradiction with the assumption that $H$ acts irreducibly on $A$.}
+If $|\Psi \rangle$ is invariant under $H$ up to a phase, then the density matrix $\rho_A$ is invariant under the action of $H$. Letting $U_h$ be the representative of $h \in H$ in $U(d_A)$, we then have that for all $h$, $U_h \rho_A U_h^\dagger = \rho_A$, or $[U_h, \rho_A] = 0$. Since $h \to U_h$ is an irreducible representation of $H$, Schur's Lemma implies that $\rho_A$ is a multiple of the identity operator.\footnote{More directly, if $\rho_A$ is not maximally mixed, then $\rho_A^{ad} = \rho_A - {1 \over d_A} \identity$ does not vanish, and transforms in the adjoint representation of $U(d_A)$. We have seen that $U_h$ commutes with $\rho_A$ and therefore with $\rho^{ad}_A$ for all $h$. Acting on $A$, $U_h$ therefore does not mix subspaces with different eigenvalues for $\rho^{ad}_A$. Since $\rho^{ad}_A$ is nonvanishing and traceless, it must have at least two different eigenvalues, so there are proper invariant subspaces for the action of $H$, in contradiction with the assumption that $H$ acts irreducibly on $A$.}
 \end{proof}
 The theorem has an immediate application to multipart systems:
 \begin{corollary}
@@ -519,13 +491,13 @@ Consider a multipart quantum system with Hilbert space
 upon which $\tilde{K} = U(d_1) \times \cdots \times U(d_n)$ acts. If a state $|\Psi \rangle \in {\cal H}$ is invariant up to a phase under a subgroup $H \subset \tilde{K}$ acting irreducibly on subsystems ${\cal H}_{\alpha} = \otimes_{i \in \alpha} {\cal H}_i$, then the density matrix for each subsystem ${\cal H}_{\alpha}$ is maximally mixed.
 \end{corollary}
 This gives a way to construct states of multipart systems whose elementary subsystems are all maximally mixed:
-\begin{corollary} \label{cor.genstates}
+\begin{corollary}
 Consider any group $H$ and any set of unitary irreducible representations $R_i$ of $H$ whose tensor product contains the trivial representation (i.e. an invariant vector). Given an explicit representation of such an invariant as
 \be
 \label{genstates}
 |0 \rangle = \sum C_{a_1 \cdots a_n} |a_1 \rangle \otimes \cdots \otimes | a_n \rangle \; ,
 \ee
-where $C_{a_1 \cdots a_n}$ are the coefficients describing how the trivial representation is embedded in the tensor product, the state $|0 \rangle$, considered as a quantum state in Hilbert space ${\cal H}_1 \otimes \cdots \otimes {\cal H}_n $ will have all elementary subsystems maximally mixed. Further, any composite subsystem ${\cal H}_{\alpha}$ for which the tensor product of representations $R_i$ with $i \in \alpha$ gives a single irreducible representation will also be maximally mixed.
+where $C_{a_1 \cdots a_n}$ are group-theoretic coefficients describing how the trivial representation is embedded in the tensor product, the state $|0 \rangle$, considered as a quantum state in Hilbert space ${\cal H}_1 \otimes \cdots \otimes {\cal H}_n $ will have all elementary subsystems maximally mixed. Further, any composite subsystem ${\cal H}_{\alpha}$ for which the tensor product of representations $R_i$ with $i \in \alpha$ gives a single irreducible representation will also be maximally mixed.
 \end{corollary}
 
 \subsection{Examples}
@@ -551,7 +523,7 @@ where $e^*_i$ are a basis for the dual vector space such that $(e^*_i, e_j) = \d
 \ee
 We can check that this is invariant under the combined transformations (\ref{rep}) and (\ref{dualrep}). In the language of quantum states, the expression (\ref{identity}) corresponds to a normalized state
 \be
-|0 \rangle = \frac{1}{\sqrt{d}} \sum_i |i \rangle \otimes |i \rangle \; ,
+|0 \rangle = {1 \over \sqrt{d}} \sum_i |i \rangle \otimes |i \rangle \; ,
 \ee
 which is exactly the Bell state (\ref{Bell}). By choosing $H = SU(2)$, we have examples for every positive integer $d$. We have seen above that this is the unique LME state for $n=2$ up to local unitary transformations.
 
@@ -585,14 +557,14 @@ can write the two-dimensional representation of $S_3$ explicitly via
 & 0 \ea \right) \; .  \ee
 \end{comment}
 
-where $\omega = e^{\frac{2 \pi i}{3}}$. It is
+where $\omega = e^{2 \pi i \over 3}$. It is
 then straightforward to check that the GHZ state (\ref{GHZ}) is
 invariant under $S_3$ acting via the tensor product of three copies of
 this representation:
 
 \begin{align*}
 (1) \otimes (1) \otimes (1)&,\quad  (123) \otimes (123) \otimes
-(123),\quad  (132)  \otimes (132)
+(123),\quad  (132)  \otimes (132) 
  \otimes (132) ,\quad \\
  (12) \otimes
 (12) \otimes (12)&,\quad \quad  (13) \otimes (13) \otimes
@@ -616,7 +588,7 @@ group acting irreducibly on all the factors.
 
 As a more general example, when the dimensions satisfy triangle inequalities and sum to an odd number, the tensor product of $SU(2)$ representations with dimensions $A$, $B$, and $C$ contains the trivial representation. The explicit representation of this trivial state is precisely described by the $3j$-symbols (closely related to Clebsch-Gordon coefficients):
 \be
-|0 \rangle =  \sum_{m_A,m_B,m_C} \left( \ba{ccc} {A - \frac{1}{2} & {B - \frac{1}{2} &{C - \frac{1}{2} \cr m_A & m_B & m_C \ea \right) |m_A \rangle \otimes |m_B \rangle \otimes |m_C \rangle \; .
+|0 \rangle =  \sum_{m_A,m_B,m_C} \left( \ba{ccc} {A - 1 \over 2} & {B - 1 \over 2} &{C - 1 \over 2} \cr m_A & m_B & m_C \ea \right) |m_A \rangle \otimes |m_B \rangle \otimes |m_C \rangle \; .
 \ee
 It is easy to verify that $\rho_A$, $\rho_B$, and $\rho_C$ are all proportional to the identity matrix using standard orthogonality relations for $3j$ symbols. For $A=2$, this gives examples with $(d_1,d_2,d_3) = (2,N,N+1)$. As we have seen above, for each $N$, there is a unique LME state with these dimensions up to local unitary transformations, so our representation theory construction gives the only example.
 
@@ -638,14 +610,14 @@ Thus, for every case with dimensions $(2,d_2,d_3)$ for which LME states exist, t
 
 For general $n$, we will now argue that $LME$ states obtained using our representation theory construction can always be represented by tensor networks with trivalent vertices, where the edges at a vertex are labelled by representations of our group whose tensor product contains the identity and tensors at each vertex correspond to the Clebsch-Gordon type coefficients describing how the trivial representation is constructed from the tensor product.
 
-To see this, we note that for a given set of representations $R_1, \cdots, R_n$ associated to the elementary subsystems, we can determine the tensor product of representations recursively by first decomposing the tensor product of any pair of representations into a sum of irreducible representations, and then repeating this procedure (now with $n-1$ total representations) for each element in the sum. For each possible representation in the full tensor product, we can associate a tree graph with trivalent vertices, with the graph structure showing our choice for how to pair up representation and the edges labeled by the representations obtained in the intermediate steps. For our application, the final representation should be the trivial representation. To construct the corresponding LME state explicitly, we can interpret the graph as a tensor network, with vertices corresponding to Clebsch-Gordon coefficients that tell us how the representation for each outgoing edge is obtained from the tensor product of the two representations associated with incoming edges at that vertex. This is shown in figure \ref{fig:tensorBoth}a.
+To see this, we note that for a given set of representations $R_1, \cdots, R_n$ associated to the elementary subsystems, we can determine the tensor product of representations recursively by first decomposing the tensor product of any pair of representations into a sum of irreducible representations, and then repeating this procedure (now with $n-1$ total representations) for each element in the sum. For each possible representation in the full tensor product, we can associate a tree graph with trivalent vertices, with the graph structure showing our choice for how to pair up representation and the edges labeled by the representations obtained in the intermediate steps. For our application, the final representation should be the trivial representation. To construct the corresponding LME state explicitly, we can interpret the graph as a tensor network, with vertices corresponding to Clebsch-Gordon coefficients that tell us how the representation for each outgoing edge is obtained from the tensor product of the two representations associated with ingoing edges at that vertex. This is shown in figure \ref{fig:tensorBoth}a.
 
-We can represent the state using an equivalent tensor network where all the trivalent vertices have incoming legs (i.e. a PEPS network) making use of a simple representation theory fact: for any representations $R_1$ and $R_2$ whose tensor product contains $R_3$, the tensor product of $R_1$, $R_2$, and the dual representation $R_3^d$ contains the trivial representation. Thus, we can replace the Clebsch-Gordon coefficient for a vertex with two incoming and one outgoing leg with the related tensor constructing the trivial representation from the $R_1$,$R_2$,$R_3^d$ and a tensor constructing the trivial representation from $R_3$ and $R_3^d$. For the case of $SU(2)$, this means that we are using $3j$-symbols rather than Clebsch-Gordon coefficients. This is indicated in figure \ref{fig:tensorBoth}b.
+We can represent the state using an equivalent tensor network where all the trivalent vertices have ingoing legs (i.e. a PEPS network) making use of a simple representation theory fact: for any representations $R_1$ and $R_2$ whose tensor product contains $R_3$, the tensor product of $R_1$, $R_2$, and the dual representation $R_3^d$ contains the trivial representation. Thus, we can replace the Clebsch-Gordon coefficient for a vertex with two ingoing and one outgoing leg with the related tensor constructing the trivial representation from the $R_1$,$R_2$,$R_3^d$ and a tensor constructing the trivial representation from $R_3$ and $R_3^d$. For the case of $SU(2)$, this means that we are using $3j$-symbols rather than Clebsch-Gordon coefficients. This is indicated in figure \ref{fig:tensorBoth}b.
 
-\begin{figure} \label{fig:tensorBoth} 
+\begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{tensorBoth.eps}
-\caption{Tensor networks describing LME states constructed from irreducible representations of a group. On the left, trivalent vertices correspond to Clebsch-Gordon type tensors describing how the representation corresponding to the outgoing leg arises from the tensor product of representations corresponding to the incoming legs. On the right, the trivalent vertices correspond to tensors constructing the trivial representation from the product of the three incoming representations. Small bivalent vertices represent tensors giving the trivial representation from the product of a representation and its dual.}
+\caption{Tensor networks describing LME states constructed from irreducible representations of a group. On the left, trivalent vertices correspond to Clebsch-Gordon type tensors describing how the representation corresponding to the outgoing leg arises from the tensor product of representations corresponding to the incoming legs. On the right, the trivalent vertices correspond to tensors constructing the trivial representation from the product of the three ingoing representations. Small bivalent vertices represent tensors giving the trivial representation from the product of a representation and its dual.}
 \label{tensorBoth}
 \end{figure}
 
@@ -670,9 +642,9 @@ The similar states defined using different graph structures are linear combinati
 
 \subsubsection*{Example 7: LME states with maximally mixed composite subsystems}
 
-In some cases, we may wish to construct states for which some composite subsystems are also maximally mixed. According to Corollary~\ref{cor.genstates}, we can achieve this by ensuring that the product of representations corresponding to the elementary subsystems in the composite subsystem gives a single irreducible representation.
+In some cases, we may wish to construct states for which some composite subsystems are also maximally mixed. According to Corollary (*), we can achieve this by ensuring that the product of representations corresponding to the elementary subsystems in the composite subsystem gives a single irreducible representation.
 
-As a simple example, suppose that we wish to construct a state of four qubits arranged in a square such that both the elementary subsystems and the nearest-neighbor pair subsystems are maximally mixed. In this case, we need a group $H$ for which the product of two irreducible two-dimensional representations can be a single irreducible four-dimensional representation. One familiar example is $H = SU(2) \times SU(2) \sim SO(4)$. The tensor product of representations $R_1 = (0, \dfrac{1}{2})$ and  $R_2 = (\dfrac{1}{2}, 0)$ gives the irreducible representation $(\dfrac{1}{2}, \dfrac{1}{2})$. We will assume that $SU(2) \times SU(2)$ acts on the four two-dimensional Hilbert spaces around the square in the representations $R_1$, $R_2$, $R_1$, $R_2$, so that the product of any two nearest neighbor representations is irreducible. The product of all four representations contains the trivial representation, as required. To write the invariant state explicitly, we can use the standard gamma matrices $\gamma^i_{\alpha \dot{\alpha}} $ from field theory which give the $SO(4)$ vector representation from the product of spinor representations to write
+As a simple example, suppose that we wish to construct a state of four qubits arranged in a square such that both the elementary subsystems and the nearest-neighbor pair subsystems are maximally mixed. In this case, we need a group $H$ for which the product of two irreducible two-dimensional representations can be a single irreducible four-dimensional representation. One familiar example is $H = SU(2) \times SU(2) \sim SO(4)$. The tensor product of representations $R_1 = (0, {1 \over 2})$ and  $R_2 = ({1 \over 2}, 0)$ gives the irreducible representation $({1 \over 2}, {1 \over 2})$. We will assume that $SU(2) \times SU(2)$ acts on the four two-dimensional Hilbert spaces around the square in the representations $R_1$, $R_2$, $R_1$, $R_2$, so that the product of any two nearest neighbor representations is irreducible. The product of all four representations contains the trivial representation, as required. To write the invariant state explicitly, we can use the standard gamma matrices $\gamma^i_{\alpha \dot{\alpha}} $ from field theory which give the $SO(4)$ vector representation from the product of spinor representations to write
 \be
 |0 \rangle = \sum \gamma^i_{\alpha \dot{\alpha}} \gamma^i_{\beta \dot{\beta}} |\alpha \rangle \otimes |\dot{\alpha} \rangle \otimes |\beta \rangle \otimes |\dot{\beta} \rangle \; ,
 \ee
@@ -702,7 +674,7 @@ We can generalize the four-qubit construction to a chain with an arbitrary multi
 \end{figure}
 Alternatively, we can first couple pairs of representations $R_1$ and pairs of representations $R_2$. If we would like to construct a state with no Bell-pairs, we can couple the spins with self-dual or anti-self-dual tensor coefficients $\gamma^{ij}_{\alpha \beta}$ or $\gamma^{ij}_{\dot{\alpha} \dot{\beta}}$ to ensure that each pair couples to transform in the $(1,0)$ or $(0,1)$ representation.
 
-More generally, we can construct states of cyclic spin chains of size $2L,4L,6L,\dots$ for which subsystems of neighboring spins of length less than or equal to $L$ are all maximally entangled. To do this, we can choose $H = SU(2)^L$, and assign representations $(\dfrac{1}{2}, 0,\dots)$, $(0, \dfrac{1}{2}, 0,\dots)$, and so forth around the chain. For size $2L$, there is a single such state, again corresponding to making Bell pairs out of opposite spins in the ring. For larger systems, we have more possible states, including states with no Bell pairs.
+More generally, we can construct states of cyclic spin chains of size $2L,4L,6L,\dots$ for which subsystems of neighboring spins of length less than or equal to $L$ are all maximally entangled. To do this, we can choose $H = SU(2)^L$, and assign representations $({1 \over 2}, 0,\dots)$, $(0,{1 \over 2}, 0,\dots)$, and so forth around the chain. For size $2L$, there is a single such state, again corresponding to making Bell pairs out of opposite spins in the ring. For larger systems, we have more possible states, including states with no Bell pairs.
 
 The same trick works in higher dimensions. For a square lattice, if we wish to have any group of spins with diameter less than $L$ be maximally mixed, we can consider $H = SU(2)^{L^2}$ with factors labeled by $SU(2)_{a,b}$ and assign to the spin at lattice site $(A,B)$ the representation which is the dimension 2 representation for $SU(2)_{A mod L, B mod L}$ and the trivial representation for the remaining $SU(2)$s. Then any group of spins with diameter less than $L$ will correspond to a group of distinct representations whose product is a single irreducible representation of $H = SU(2)^{L^2}$. Choosing the total state to be an $SU(2)^{L^2}$ singlet, our corollary guarantees that this subsystem will be maximally mixed.
 
@@ -714,15 +686,15 @@ We can use this general approach to construct {\it absolutely
 maximally entangled} (AME) states, for which all subsystems with
 dimension less than or equal to the dimension of the complementary
 subsystem (call these ``small'' subsets) are maximally
-mixed. According to Corollary~\ref{cor.genstates}, we can achieve this if we find a
+mixed. According to Corollary 3.3, we can achieve this if we find a
 group $H$ with representations $R_i$ whose tensor product contains the
 identity representation and for which the tensor product of any small
-subset of representations is irreducible. {\bf Need to finish this:
+subset of representations is irreducible. {bf need to finish this:
 Example of 6 spin state via Pauli group}.
 
 \subsection{Quantum systems with only LME states}
 
-An interesting point (suggested by Eliot Hijano) is that we can describe quantum mechanical systems for which all physical states have each elementary subsystem (or some larger set of subsystems) maximally mixed. Given any multipartite system with a Hamiltonian ${\mathcal H}$ invariant under the global symmetry group $H$ acting irreducibly in each elementary subsystem (and possibly in some composite subsystems), we simply gauge the group $H$. This restricts us to physical states which are invariant under $H$, so by our Corollary~\ref{cor.genstates}, these will have all subsystems upon which $H$ acts irreducibly maximally mixed. For these theories, local observables in these subsystems give no information about the state, since the density matrix for each physical state is the same.
+An interesting point (suggested by Eliot Hijano) is that we can describe quantum mechanical systems for which all physical states have each elementary subsystem (or some larger set of subsystems) maximally mixed. Given any multipartite system with a Hamiltonian ${\mathcal H}$ invariant under the global symmetry group $H$ acting irreducibly in each elementary subsystem (and possibly in some composite subsystems), we simply gauge the group $H$. This restricts us to physical states which are invariant under $H$, so by our corollary 3.3, these will have all subsystems upon which $H$ acts irreducibly maximally mixed. For these theories, local observables in these subsystems give no information about the state, since the density matrix for each physical state is the same.
 
 For these theories, the dimension of the Hilbert space of physical states is exactly the number of trivial representations appearing in the tensor product of representations $R_i$ associated to the elementary subsystems. Given a particular graph structure for the associated tensor network (as in figures \ref{group1} or \ref{group2}), we can choose basis elements corresponding to the different ways of labeling the edges with representations such that the tensor product of three representations at each vertex includes the identity. In some cases, when the tensor product of two representations at a vertex contains multiple copies of the dual of the third representation, there will be multiple independent ways to couple the three representations to a trivial representation. In this case, we need to add an additional discrete label on the vertex to indicate which structure we are choosing.
 
@@ -750,7 +722,7 @@ to the group $\tilde{K} = U(d_1) \times \cdots \times U(d_n)$ acting
 on ${\cal H}$. Without loss of generality, we may consider the smaller
 group $K = SU(d_{1})\times \dotsb \times SU(d_{n})$ since the action
 of $\tilde{K}$ and $K$ on the projective space $P({\cal H}) = \mathbb{C}
-P^{D-1}$ have the same orbits.
+P^{D-1}$ have the same orbits. 
 
 \begin{comment}
 The $U(1)$ factors here are redundant since they each
@@ -780,7 +752,7 @@ We will see below that the classification of SLOCC equivalence classes is intima
 
 The space of quantum states (either ${\cal H}$ or $P({\cal H})$) has a natural symplectic structure (i.e. the structure of a phase space), associated with the symplectic form
 \be
-\omega = i h_{ij} dz^{i} \wedge  d\bar{z}^j =  \frac{i}{2} \frac{\partial}{\partial z^i} \frac{\partial}{\partial \bar{z}^j} \log (|z|^2) dz^{i} \wedge  d\bar{z}^j
+\omega = i h_{ij} dz^{i} \wedge  d\bar{z}^j =  {i \over 2} {\partial \over \partial z^i} {\partial \over \partial \bar{z}^j} \log (|z|^2) dz^{i} \wedge  d\bar{z}^j
 \ee
 on ${\cal H} = \mathbb{C}^D$ or the naturally associated pullback to $P({\cal H})$. The latter is known as the Fubini-Study form. The associated metric
 \be
@@ -907,7 +879,7 @@ and we have
 \be
 \det(Z) \to \det(M^1 Z (M^2)^T) = \det(M^1) \det(Z) \det(M^2) = \det(Z) \; .
 \ee
-More generally, we can build invariants by taking some number  of copies of $\psi_{i_1 \cdots i_n}$ (this must be a multiple of ${\rm lcm}(d_1, \dots, d_n)$) and contracting the set of $k$th indices on all the copies in some way using invariant tensors $\epsilon^{i_1 \cdots i_{d_k}}$. An important result of Hilbert (see \cite{mfk,dc}) is that the ring of all such invariants is finitely generated over $\mathbb C$. That is, there is a finite number of polynomial invariants $f_1, \dots, f_N$, which can be taken to be homogeneous of positive degree, such that that every other invariant can be expressed as a polynomial in $f_1, \dots, f_N$ with complex coefficients. Let us denote the degree of $f_i$ by $k_i$. In general, we can have relations among the generators $f_1, \dots, f_N$.
+More generally, we can build invariants by taking some number  of copies of $\psi_{i_1 \cdots i_n}$ (this must be a multiple of ${\rm lcm}(d_1, \dots, d_n)$) and contracting the set of $k$th indices on all the copies in some way using invariant tensors $\epsilon^{i_1 \cdots i_{d_k}}$. An important result of Hilbert (see \cite{mfk,dc}) is that the set of all such invariants is finitely generated i.e. that every invariant may be expressed as a sum of products of some finite set of generators, which can be taken to be homogeneous polynomials in $\psi$ of positive degree. Let us denote some such set of generators by $(f_1,\dots,f_N)$ of degree $(k_1, \dots, k_N)$. In general, we can have relations among these generators.
 
 For a point $x$ in the projective space $P({\cal H})$, different representatives in ${\cal H}$ will have different values for the invariant polynomials. But for $\psi \to \lambda \psi$, our basis of polynomials transform as
 \be
@@ -943,7 +915,7 @@ For dimensions $(d_1, \dots, d_n)$, there exist locally maximally entangled stat
 
 In terms of representation theory, the existence of an invariant polynomial is equivalent to the condition that the symmetrized $k$-th tensor power of the $(d_1,d_2,\cdots, d_n)$ representation of $SL(d_1, \mathbb{C}) \times \cdots \times SL(d_1, \mathbb{C})$ contains the trivial representation for some $k$.
 
-This representation theory question is equivalent, via Schur-Weyl duality, to a question about representation theory of the symmetric group. We recall that representations of the symmetric group $S_n$ may be labelled by Young diagrams with $n$ boxes. For our specific case, the representations we are interested in are representations $R(A,B)$ corresponding to rectangular Young diagrams with $A$ rows and $B$ columns. The conditions is that for some $k$, the tensor product
+This representation theory question is equivalent (making use of Schur-Weyl duality) to a question about representation theory of the symmetric group. We recall that representations of the symmetric group $S_n$ may be labelled by Young diagrams with $n$ boxes. For our specific case, the representations we are interested in are representations $R(A,B)$ corresponding to rectangular Young diagrams with $A$ rows and $B$ columns. The conditions is that for some $k$, the tensor product
 \be
 \label{reps}
 R(d_1, k d_2 \cdots d_n) \times R(d_2, k d_1 d_3 \cdots d_n) \times \cdots \times R(d_n, k d_1 \cdots d_{n-1})
@@ -952,7 +924,7 @@ contains the trivial representation.
 
 These representation theory criteria also follow from general results about the compatibility of spectra of density matrices (known as the {\it quantum marginal problem}). The existence of locally maximally entangled states is equivalent to asking whether it is possible to find a density matrix $\rho_{A_1 \cdots A_n}$ with spectrum $(1,0,0,\dots,0)$ for which $\rho_{A_k}$ has spectrum $(1/d_k,1/d_k, \dots, 1/d_k)$.
 
-Using the representation theory of the symmetric group, it is possible to come up with an explicit calculational check for when the product of representations (\ref{reps}) contains the trivial representation; see Exercise 4.51 and Theorem 4.10 in Fulton and Harris~\cite{fh}. Specifically, the number of trivial representations in this tensor product is given by
+Using the representation theory of the symmetric group, it is possible to come up with an explicit calculational check for when the product of representations (\ref{reps}) contains the trivial representation (see exercise 4.51 and theorem 4.10 of Fulton and Harris). Specifically, the number of trivial representations in this tensor product is given by
 \be
 \label{check}
 N = \sum_p {1 \over z(p)} \chi_{(d_1, k d_2 d_3)}(C_p) \chi_{(d_2, k d_1 d_3)}(C_p) \chi_{(d_3, k d_1 d_2)}(C_p)
@@ -961,7 +933,7 @@ where the sum runs over partitions of $D = k d_1 d_2 d_3$, labeled by Young diag
 \be
 z(p) = i_1!1^{i_1} i_2! 2^{i_2} \cdots i_D! D^{i_D} \; ,
 \ee
-and $\chi_R(C_p)$ is the character associated with representation $R$, evaluated for the conjugacy class $C_p$ associated with $p$. Frobenius gave an explicit formula for this (see~\cite[4.10]{fh}), so in principle, to decide if there is a locally maximally entangled state in the tensor product of Hilbert spaces with dimension $(d_1,d_2,d_3)$ we need only evaluate the expression \eqref{check} as a function of $k$ and check whether it is ever non-zero. Unfortunately, this turns out to be computationally hard for all but the smallest dimensions.
+and $\chi_R(C_p)$ is the character associated with representation $R$, evaluated for the conjugacy class $C_p$ associated with $p$. The Frobenius formula (result 4.10 in Fulton and Harris) gives an explicit formula for this, so in principle, to decide if there is a locally maximally entangled state in the tensor product of Hilbert spaces with dimension $(d_1,d_2,d_3)$ we need only evaluate the result (\ref{check}) as a function of $k$ and check whether it is ever non-zero. Unfortunately, this turns out to be computationally hard for all but the smallest dimensions.
 
 \section{Understanding ${\cal H}_{LME}$ using geometric invariant theory}
 
@@ -975,12 +947,11 @@ To understand the dimension of the quotient $P({\cal H})\GITquot G$, we note tha
 \ee
 This naive dimension can fail to be correct, however, if a typical points in ${\cal H}$ is invariant under some subgroup of $G$ with positive dimension.
 
-For any point $\psi \in {\cal H}$, we define $S_\psi \in G$ to be the subgroup of $G$ that leaves $\psi$ invariant. This is called the {\it stabilizer} at position $\psi$. The dimension of $S_\psi$ is equal to the dimension of the subspace of infinitesimal transformations in the Lie algebra of $G$ that leaves $\psi$ invariant.\footnote{This can be computed by {\bf insert reference here or remove the entire footnote}.} As we review in \cite{mathpaper}, there always exists some subgroup $S \subset G$ and a dense open subset of $U \in {\cal H}$ such that the stabilizer at any point in $U$ is conjugate to $S$. A theorem of Popov~\cite{popov} then tells us that 
+For any point $\psi \in {\cal H}$, we define $S_\psi \in G$ to be the subgroup of $G$ that leaves $\psi$ invariant. This is called the {\it stabilizer} at position $\psi$. The dimension of $S_\psi$ is equal to the dimension of the subspace of infinitesimal transformations in the Lie algebra of $G$ that leaves $\psi$ invariant.\footnote{This can be computed by (*)} As we review in \cite{mathpaper}, there always exists some subgroup $S \subset G$ and a dense open subset of $U \in {\cal H}$ such that the stabilizer at any point in $U$ is conjugate to $S$. Basic results in geometric invariant theory then imply that the correct dimensionality for the GIT quotient is always
 \be
 \label{realdim}
 {\rm dim}(P({\cal H})\GITquot G) = {\rm dim}(P({\cal H})) - {\rm dim}(G) + {\rm dim}(S)    \; .
 \ee
-(The key point here is that the group $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n, \mathbb{C})$ is semisimple.)
 If this dimension is $-1$, this means that a neighborhood of a generic point in the space ${\cal H}$ is contained within the $G$-orbit of this point. In this case, it follows that the quotient is empty, since a point $\lambda x$ for $\lambda < 1$ will then be in the $G$-orbit of $x$, and by iterating the group action that gives this point, we will end up arbitrarily close to 0. Thus, the orbit of a generic point is unstable.
 
 \subsection{Proof of theorems governing existence and dimension of ${\cal H}_{LME}$}
@@ -1049,26 +1020,24 @@ These define a space isomorphic to the space defined by $P_{I_1 \cdots I_{d_n}}$
 
 {\bf Case 4: $d_n \le {1 \over 2} d_1 \cdots d_{n-1}$}
 
-In this case, it is not hard to show that the naive dimension $\Delta(d_1, d_2, \dots d_n)$ is positive except in the special case where $n=3$ and $(d_1, d_2, d_3) = (2,d,d)$. In this latter case, we have already shown by our explicit construction in section 2 that the space of LME states up to local unitaries is a single point for $d=2$ and has dimension $d-3$ for $d > 3$. In the remaining cases, we show in \cite{mathpaper} making use of the work of
-Elashvili \cite{elashvili}  that the stabilizer for a generic point has dimension 0. Thus, by the result (\ref{realdim}), the dimension is the naive dimension $\Delta(d_1, d_2, \dots d_n) > 0$ and the quotient is non-empty.
+In this case, it is not hard to show that the naive dimension $\Delta(d_1, d_2, \dots d_n)$ is positive except in the special case where $n=3$ and $(d_1, d_2, d_3) = (2,d,d)$. In this latter case, we have already shown by our explicit construction in section 2 that the space of LME states up to local unitaries is a single point for $d=2$ and has dimension $d-3$ for $d > 3$. In the remaining cases, we show in \cite{mathpaper} making use of some existing results \cite{elashvili, popov}  that the stabilizer for a generic point has dimension 0. Thus, by the result (\ref{realdim}), the dimension is the naive dimension $\Delta(d_1, d_2, \dots d_n) > 0$ and the quotient is non-empty.
 
 \end{itemize}
 
 \subsection{Explicit Results}
 
-The recursive algorithm of Theorem~\ref{thm.States} tells us which $(d_1, \dots, d_n)$ admit LME states. allows us to
-compute the dimension of the space ${\cal H}_{LME}/K$. In this section, we analyze this algorithm to provide more explicit results in some cases.
+The recursive algorithm of Theorem \ref{thm.States} gives an implicit answer for which dimensions $(d_1, \dots, d_n)$ admit LME states and for the dimension of the space ${\cal H}_{LME}/K$. In this section, we analyze the algorithm to provide more explicit results in some cases.
 
-Since the recursive step in Theorem~\ref{thm.States} (case 4) always decreases the sum of dimensions, it will always terminate on one of the first three cases after a finite number of steps. We can predict which will be the terminal case by noting that
+Since the recursive step in Theorem \ref{thm.States} (case 4) always decreases the sum of dimensions, the recursive algorithm of Theorem \ref{thm.States} will always terminate on one of the first three cases after a finite number of steps. We can predict which will be the terminal case by noting that
 the quantity
 \be
 R(\vec{d}) = \prod_i d_i + \sum_{k=1}^n (-1)^k \sum_{1 \le i_1 < \cdots < i_k \le n} (\gcd(d_{i_1},\dots,d_{i_2}))^2 \; .
 \ee
-is invariant under the transformation in case 4 of Theorem~\ref{thm.States}. By studying the behavior of $R$ in the terminal cases (see \cite{mathpaper}) it follows that:
+is invariant under the transformation in case 4 of Theorem \ref{thm.States}. By studying the behavior of $R$ in the terminal cases (see \cite{mathpaper}) it follows that:
 \begin{proposition}\label{prop:Rcases}
 The algorithm in Theorem 1.2 terminates on case (1) if and only if $R<0$, on case (2) if and only if $R=0$ and on case (3) if and only if $R>0$.
 \end{proposition}
-This immediately gives Theorem \ref{thm.R}. To demonstrate Theorem \ref{thm.dims}, we observe that
+This immediately gives Theorem \ref{thm.R}. To demonstrate Theorem \ref{thm.dims}, we use that
 \be
 \label{defDelta}
 \Delta(d_1, \dots d_n) \equiv \prod_i d_i - 1 - \sum_i (d_i^2 - 1)   \; .
@@ -1090,7 +1059,7 @@ If $\Delta(d_1, \dots d_n) > -2$, the recursion in Theorem \ref{thm.States} term
 \begin{proof}
 We first note that at least two of the $d'$ are greater than or equal to 2: in each recursion step, the number of 1s in the list of dimensions can increase by one, but with $n-2$ 1s, we will either be in case (a) or (b) and the recursion terminates.
 
-To prove the proposition, we need to establish that $\Delta < -2$ for terminal dimensions satisfying the conditions of cases (1) and (2), while for terminal dimensions satisfying the conditions of case (3), $\Delta = -2$ for $(d'_1, \dots d'_n) = (1,\dots,1,2,d',d')$ and $\Delta > -2$ otherwise.
+To show the proposition, we need to establish that $\Delta < -2$ for terminal dimensions satisfying the conditions of cases (1) and (2), while for terminal dimensions satisfying the conditions of case (3), $\Delta = -2$ for $(d'_1, \dots d'_n) = (1,\dots,1,2,d',d')$ and $\Delta > -2$ otherwise.
 
 To see this, it is useful to think of the quantity $\Delta$ as a quadratic polynomial in $d_n$, holding the other dimensions fixed. The parabola described by $\Delta(d_n)$ has a maximum at $d_n = d_1 \cdots d_{n-1}/2$. Thus, it is decreasing at $d_n = d_1 \cdots d_{n-1}$ where $\Delta = \sum_{i=1}^{n-1} (1 - d_i^2) < -2$. It follows that $\Delta < -2$ for cases (1) and (2).
 
@@ -1103,9 +1072,9 @@ Using these results, it is now straightforward to characterize the behavior of t
 \[
 d_* = {P \over 2} + {1 \over 2}\sqrt{P^2 - 4 Q + 8} \qquad  P = \prod_{i=1}^{n-1} d_i,\;  Q = \sum_{i=1}^{n-1} (d_i^2 - 1) \; .
 \]
-Then according to Proposition~\ref{prop.terminal}, for $d_{n-1} \le d_n < d_*$ the space ${\cal H}_{LME}/K$ is non-empty and has dimension $\Delta(d_1, \dots d_n)$.  If $d_*$ is an integer, ${\cal H}_{LME}/K$ is nonempty for $d_n= d_*$; in this case, the recursion terminates at $(1,\dots,1,2,d',d')$ and ${\cal H}_{LME}/K$ has dimension $d'-3$ for $d' \ge 3$ and $0$ for $d' = 2$. Finally, for $d_* \le d_n \le d_1 \cdots d_{n-1}$, there is a set of sporadic cases for which ${\cal H}_{LME}/K$ is a single point.
+Then according to proposition \ref{prop.terminal}, for $d_{n-1} \le d_n < d_*$ the space ${\cal H}_{LME}/K$ is non-empty and has dimension $\Delta(d_1, \dots d_n)$.  If $d_*$ is an integer, ${\cal H}_{LME}/K$ is nonempty for $d_n= d_*$; in this case, the recursion terminates at $(1,\dots,1,2,d',d')$ and ${\cal H}_{LME}/K$ has dimension $d'-3$ for $d' \ge 3$ and $0$ for $d' = 2$. Finally, for $d_* \le d_n \le d_1 \cdots d_{n-1}$, there are a set of sporadic cases for which ${\cal H}_{LME}/K$ is a single point.
 
-For $n=3$ we can characterize these sporatic cases explicitly.
+Finally, for $n=3$ we can characterize explicitly the non-empty cases with $d_3 \ge d_*$:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{proposition}\label{prop.Fib}
@@ -1150,7 +1119,7 @@ The general terms in the sequence defined by (\ref{Fib}) can be given explicitly
 \be
 f_i = {f_0 + (f_1 - A f_0) x \over 1 - Ax + x^2}|_{x^n} \; .
 \ee
-For $A \ge 3$, the region defined by~\eqref{Sregion} covers a narrow band of the plane near the curve $bc=A$, symmetric about the line $b=c$ and contained in the region $b < A$, $c < A$. Thus, while the definition of $S_A$ still involves the recursion from Theorem~\ref{thm.States}, we need only check a finite number of points (on the order of $A$) in the region \eqref{Sregion} to determine the set, after which we can use Proposition~\ref{prop.Fib} to give an explicit formula for all $\Delta < 0$ triples $(A,d_2,d_2)$ with a nonempty quotient. As examples, we have
+For $A \ge 3$, the region defined by (\ref{Sregion}) covers a narrow band of the plane near the curve $bc=A$, symmetric about the line $b=c$ and contained in the region $b < A$, $c < A$. Thus, while the definition of $S_A$ still involves the recursion from Theorem~\ref{thm.GIT}, we need only check a finite number of points (on the order of $A$) in the region (\ref{Sregion}) to determine the set, after which we can use Proposition~\ref{prop.Fib} to give an explicit formula for all $\Delta < 0$ triples $(A,d_2,d_2)$ with a nonempty quotient. As examples, we have
 \bea
 S_3 &=& {(3,2),(2,2),(2,3)} \cr
 S_4 &=& {(4,2),(3,2),(2,3),(2,4)} \cr
@@ -1167,30 +1136,30 @@ For this case, the range $d_{n-1} \le d_n < d_*$ is empty, so the only non-empty
 
 \section{Normal forms for unstable vectors in ${\cal H}$}
 
-We have seen that there is a one-to-one correspondence between families of LME states related by local unitary transformations and families of semistable states related by SLOCC (i.e. local invertible transformations). The latter states are in some sense states with ``generic'' entanglement. Geometric invariant theory tells us that when semistable states exist, the set of unstable states is measure zero in the set of all states. As an example, for the case of three qubits, states with GHZ-type entanglement are semistable, while states with W-type entanglement, purely bipartite entanglement, or no entanglement are unstable.
+We have seen that there is a one-to-one correspondence between families of LME states related by local unitary transformations and families semistable states related by SLOCC (i.e. local invertible transformations). The latter states are in some sense states with ``generic'' entanglement; it follows from basic results in geometric invariant theory that when semistable states exist, the set of unstable states is measure zero in the set of all states. As an example, for the case of three qubits, states with GHZ-type entanglement are semistable, while states with W-type entanglement, purely bipartite entanglement, or no entanglement are unstable.
 
 The results of the previous section give a complete description of which quantum systems have semistable states, but in these cases, we may be interested more specifically in which particular states are semistable and which are unstable. In this section, we describe one way to characterize the unstable vectors, describing a procedure to identify certain normal forms of the tensors describing unstable states.
 
-A point $x \in {\cal H} = \mathbb{C}^{d_1 \cdots d_n}$ is unstable if and only if the orbit under $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n, \mathbb{C})$ of $x$ contains 0 in its closure. By the Hilbert-Mumford criterion~\cite{mfk} this will be true if and only if there exists a one-parameter subgroup (1PS) $\lambda \colon \mathbb C^* \to G$ such that $\lim_{t \to 0} \lambda(t)x = 0$. Any 1PS is conjugate to a $\lambda$ which takes $t$ to 
+A point $x \in {\cal H} = \mathbb{C}^{d_1 \cdots d_n}$ is unstable if and only if the orbit under $G = SL(d_1, \mathbb{C}) \times \cdots \times SL(d_n, \mathbb{C})$ of $x$ contains 0 in its closure. This will be true if and only if there exists a one-parameter subgroup (1PS) $G_m$ of $G$ under which the orbit of $x$ contains 0 in its closure. Any 1PS is conjugate to a 1PS of the form
 \be
 \label{Form1}
 {\rm Diag} (t^{m_{1,1}}, t^{m_{1,2}}, \dots, t^{m_{1,d_1}}) \otimes {\rm Diag} (t^{m_{2,1}}, t^{m_{2,2}}, \dots, t^{m_{2,d_2}}) \otimes \cdots \otimes {\rm Diag} (t^{m_{n,1}}, t^{m_{n,2}}, \dots, t^{m_{n,d_n}})\; .
 \ee
-where the $m_{a,b}$ are integers satisfying
+where the $m_{a,b}$ are integers satisfying\footnote{The latter condition is necessary to ensure unit determinant for the various factors.}
 \be
 \label{mconds}
-m_{a,1} \ge m_{a,2} \ge \cdots \ge m_{a,d_a} \qquad \text{and} \qquad \sum_b m_{a,b} =0.
+m_{a,1} \ge m_{a,2} \ge \cdots \ge m_{a,d_a} \qquad \qquad \sum_b m_{a,b} =0
 \ee
-(The latter condition is necessary to ensure unit determinant for the various factors.)
-Thus, a point $x$ will be unstable under $G$ if and only if there exists an element $\hat{x}$ in $G \cdot x$ that is unstable under a 1PS $\lambda$ of the form~\eqref{Form1}. We can think of $\hat{x}$ as a normal form for the unstable vector $x$.
-To characterize the unstable states, our strategy will be determine the points $\hat{x}$ that are unstable under a 1PS of the form (\ref{Form1}) and then investigate the translates of this set under $G$.
+Thus, a point $x$ will be unstable under $G$ if and only if there exists an element $\hat{x}$ in $G \cdot x$ that is unstable under a 1PS of the form (\ref{Form1}). We can think of $\hat{x}$ as a normal form for the unstable vector $x$.
+To characterize the unstable states, our strategy will be determine the points $\hat{x}$ that are unstable under a 1PS of the form (\ref{Form1}) and then investigate the image of this set under $G$.
 
-Under the subgroup $\lambda$ in \eqref{Form1} our coordinates on ${\cal H}$ transform as
+Under the subgroup (\ref{Form1}) our coordinates on ${\cal H}$ transform as
 \be
 \label{psitform}
-t \colon \psi_{i_1 \cdots i_n} \to t^{m_{1,i_1} + m_{2,i_2} + \dots + m_{n,i_n}} \psi_{i_1 \cdots i_n} \; .
+\psi_{i_1 \cdots i_n} \to t^{m_{1,i_1} + m_{2,i_2} + \dots + m_{n,i_n}} \psi_{i_1 \cdots i_n} \; .
 \ee
 Since the various components of $\psi$ do not mix under this transformation, the question of whether a point $\psi$ is unstable under the 1PS depends only on which of the components are nonzero.
+
 For a fixed choice of $m_{a,b}$, a point will be unstable under the corresponding 1PS if and only if for each nonzero coordinate,
 \be
 \label{mineq}
@@ -1207,7 +1176,7 @@ W_i \cdot m > 0 \; ,
 \ee
 where $i$ labels the nonzero elements of $\psi$, and $W_i$ is a vector whose dimension is the number of independent $m$s; the elements of $W_i$ are all either 1 or zero. Specifically, $W$ is defined such that in the expression $W \cdot m$ corresponding to the coordinate $\psi_{i_1 \cdots i_n}$, we have $m_{k,i_k}$ for each $i_k \ne d_k$ and $-m_{k,1} - \dots - m_{k,d_k - 1}$ for each $i_k = d_k$.
 
-For this set of vectors $W$ corresponding to the nonzero elements of $\psi$, and we want to ask whether there is a vector $m$ whose dot product with all of these is positive. This will be true if and only if all the vectors lie on one side of a hyperplane through the origin. In other words, it is true if and only if the origin does not lie in the convex hull of the points $W_i$.
+For this set of vectors $W$ corresponding to the nonzero elements of $\psi$, and we want to ask whether there is a vector $m$ whose dot product with all of these is positive. This will be true if and only if all the vectors lie on one side of a plane through the origin. In other words, it is true if and only if the origin does not lie in the convex hull of the points $W_i$.
 
 We now have a way to check which partitions correspond to unstable subspaces: write the $W$ vectors corresponding to each nonzero element, and check whether 0 is in the convex hull. Via this procedure, we will produce a list of partitions that correspond to subspaces unstable under a 1PS of the form (\ref{Form1}).
 
@@ -1216,7 +1185,7 @@ We now have a way to check which partitions correspond to unstable subspaces: wr
 Suppose we are given a partition corresponding to some subspace ${\cal N}$ that we determine is unstable under a 1PS of the form (\ref{Form1}). Then the dimension of the $G$-orbit of this subspace will be:
 \be
 \label{dimensions}
-{\rm dim}( G \cdot {\cal N}) = {\rm dim}({\cal N}) + {\rm dim}(G) - {\rm dim}(S)
+{\rm dim}( G \cdot {\cal N}) = {\rm dim} {\cal N} + {\rm dim} G - {\rm dim} S
 \ee
 where $S$ represents the subspace of the Lie algebra of $G$ that stabilizes (leaves invariant) a generic point in ${\cal N}$. For some fixed point $\psi_{\cal N}$ in the null space, an element of the Lie algebra will be a generator of the stabilizer group if and only if
 \be
@@ -1266,7 +1235,7 @@ Thus, we can think of (\ref{nullnormal}) as a set of normal form for the unstabl
 
 \section{Discussion}
 
-In this paper we have given general conditions on subsystem dimensions for the existence of LME states. We have also provided explicit constructions of LME states based on representation theory. Our explicit examples are by construction invariant under some subgroup of the local unitary group $K$; thus, we can think of them as a special class of stabilizer LME states, though in some cases all LME states are of this type.
+In this paper we have given general conditions on subsystem dimensions for the existence of LME states. We have also provided explicit constructions of LME states based on representation theory. Our explicit examples are by construction invariant under some subgroup of the local unitary group $K$; thus, we can think of them as a special class of stabilizer LME states, though in some cases all LME states are of this type. 
 
 The combination of our results have interesting implications for the representation theory of finite and/or compact groups:
 \begin{proposition}
@@ -1716,27 +1685,15 @@ Existence of locally maximally entangled states via geometric invariant theory,
 in preparation.
 
 
-\bibitem[E72]{elashvili}
-A.~G.~\`Ela\v svili,
-Stationary subalgebras of points of general position
-for irreducible linear Lie groups, Funkcional. Anal. i Prilo\v zen.
-{\bf 6} (1972), no.~2, 65--78. MR0304555.
-English translation in Functional Anal. Appl. 6 (1972), 139--148.
-
 % \bibitem[GW11]{gw11} Gilad Gour, Nolan R.~Wallach,
 % Necessary and sufficient conditions for local manipulation
 % of multipartite pure quantum states, New Journal of Physics,
 % Volume 13, July 2011.
 
-\bibitem[GW13]{gw13} G.~Gour, N.~R.~Wallach,
+\bibitem[GW13]{gw13} Gilad Gour, Nolan R.~Wallach,
 Classification of Multipartite Entanglement of All Finite Dimensionality,
 Phys. Rev. Lett. 111, 060502 (2013)
 
-\bibitem[DC71]{dc}
-J. A. Dieudonn\'e and\ J. B. Carrell, {\it Invariant theory, old and new}, Academic Press, New York, 1971. MR0279102
-
-\bibitem[FH91]{fh}
-W. Fulton\ and\ J. Harris, {\it Representation theory}, Graduate Texts in Mathematics, 129, Springer-Verlag, New York, 1991. MR1153249
 
 \bibitem[Hos12]{Hoskins}
 V.~Hoskins, Geometric Invariant Theory and Symplectic Quotients,
@@ -1762,7 +1719,7 @@ Alexander Klyachko.
 
 
 \bibitem[MFK94]{mfk}
-D.~Mumford, J.~Fogarty\ and\ F.~Kirwan, {\it Geometric invariant theory},
+D. Mumford, J. Fogarty\ and\ F. Kirwan, {\it Geometric invariant theory},
 third edition, Ergebnisse der Mathematik und ihrer Grenzgebiete (2), 34,
 Springer-Verlag, Berlin, 1994. MR1304906
 
