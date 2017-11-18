@@ -474,7 +474,7 @@ $B=2$ and $B=3$, and a space of real dimension $2(B-3)$ for $B \ge 3$.
 
 For $(B,C)=(NK,(N+1)K)$, we show that there is a unique LME state up to local unitary transformations. In the case $K=1$, we can write this state explicitly as
 \be
-|\Psi_{(2,N,N+1)} \rangle = \frac{1}{\sqrt{(N+1)}} \sum_{b=1}^N \left\{ \sqrt{\frac{N + 1 - b}{N}} |0 \rangle \otimes  |b  \rangle \otimes |b \rangle + \sqrt{\frac{{b}{N}}  |1 \rangle \otimes|b \rangle \otimes |b+1 \rangle \right\} \; .
+|\Psi_{(2,N,N+1)} \rangle = \frac{1}{\sqrt{N+1}} \sum_{b=1}^N \left\{ \sqrt{\frac{N + 1 - b}{N}} |0 \rangle \otimes  |b  \rangle \otimes |b \rangle + \sqrt{\frac{b}{N}}  |1 \rangle \otimes|b \rangle \otimes |b+1 \rangle \right\} \; .
 \ee
 For general $K$, we can write the LME state a tensor product
 \be
@@ -616,7 +616,8 @@ group acting irreducibly on all the factors.
 
 As a more general example, when the dimensions satisfy triangle inequalities and sum to an odd number, the tensor product of $SU(2)$ representations with dimensions $A$, $B$, and $C$ contains the trivial representation. The explicit representation of this trivial state is precisely described by the $3j$-symbols (closely related to Clebsch-Gordon coefficients):
 \be
-|0 \rangle =  \sum_{m_A,m_B,m_C} \left( \ba{ccc} {A - \frac{1}{2} & {B - \frac{1}{2} &{C - \frac{1}{2} \cr m_A & m_B & m_C \ea \right) |m_A \rangle \otimes |m_B \rangle \otimes |m_C \rangle \; .
+|0 \rangle =  \sum_{m_A,m_B,m_C} \left( \ba{ccc} \frac{A - 1}{2} & \frac{B - 1}{2} & \frac{C - 1}{2} \cr 
+m_A & m_B & m_C \ea \right) |m_A \rangle \otimes |m_B \rangle \otimes |m_C \rangle \; .
 \ee
 It is easy to verify that $\rho_A$, $\rho_B$, and $\rho_C$ are all proportional to the identity matrix using standard orthogonality relations for $3j$ symbols. For $A=2$, this gives examples with $(d_1,d_2,d_3) = (2,N,N+1)$. As we have seen above, for each $N$, there is a unique LME state with these dimensions up to local unitary transformations, so our representation theory construction gives the only example.
 
